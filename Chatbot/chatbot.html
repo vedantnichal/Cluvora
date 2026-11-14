@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5fa">
+  <meta name="description" content="AI Assistant for IIT Bhilai Student Mentorship Program Brochure 2026-27">
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/cosa-crest.svg">
+  <link rel="stylesheet" href="/style/global.css">
+  <link rel="stylesheet" href="/style/chatbot.css">
+  <title>Brochure Assistant | Cluvora — IIT Bhilai</title>
+  <script>
+    const saved_theme = localStorage.getItem("theme");
+    const prefers_dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved_theme || (prefers_dark ? "dark" : "light"));
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Cluvora home">
+        <img src="/assets/logos/cosa-crest.svg" alt="Council of Student Affairs logo" width="44" height="44">
+        <span><strong>Cluvora</strong><small>Student life · IIT Bhilai</small></span>
+      </a>
+      <div class="nav-area">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/tech-clubs">Tech clubs</a>
+          <a href="/cultural-clubs">Cultural clubs</a>
+          <a href="/societies">Societies</a>
+          <a href="/announcements">Announcements</a>
+          <a href="/contact">Contact</a>
+          <a href="/chatbot" aria-current="page">AI Assistant</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+          aria-label="Switch to dark theme">
+          <span aria-hidden="true" id="theme-icon">◐</span><span id="theme-label">Dark mode</span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="chat-container-wrap">
+      <div class="chat-hero">
+        <span class="chat-badge">SMP 2026–27 Student Life Guide</span>
+        <h1>Brochure AI Assistant</h1>
+        <p>Ask anything about IIT Bhilai student life, councils, clubs, societies, sports, and campus fests. All sources
+          are referred directly from the official <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf"
+            target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">IIT
+            Bhilai Brochure 2026–27</a> — so please <a href="/contact"
+            style="color: var(--primary); text-decoration: underline;">contact CoSA</a> for any queries or official
+          assistance.</p>
+      </div>
+
+      <div class="chat-card">
+        <div class="chips-wrapper" id="chips-container">
+          <button class="chip-btn" data-query="Tell me about Meraz fest">🎪 Meraz Fest</button>
+          <button class="chip-btn" data-query="What is the Council of Student Affairs (CoSA) and who leads it?">🏛️ CoSA
+            & Leadership</button>
+          <button class="chip-btn" data-query="Tell me about Sci-Tech Council clubs like GDG and Epsilon">💻 Tech clubs
+            & GDG</button>
+          <button class="chip-btn" data-query="Tell me about Cultural Council clubs like Drishya and BeatHackers">🎭
+            Cultural & Dance clubs</button>
+          <button class="chip-btn" data-query="What is Prayatna and Anveshan?">🏆 Prayatna & Anveshan</button>
+          <button class="chip-btn" data-query="What sports and gym facilities are available on campus?">🏀 Sports & Gym
+            facilities</button>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+          <div class="chat-bubble bot">
+            Hello! I am your IIT Bhilai Student Life Assistant. I have indexed the <strong>Student Mentorship Program
+              Brochure (Student Life, Clubs &amp; CoSA)</strong>.
+            <br><br>
+            What would you like to know about councils, technical/cultural clubs, Meraz fest, or sports facilities?
+            <br><br>
+            <small style="opacity: 0.85; display: inline-block;">📌 All sources are referred directly from the official
+              <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank"
+                rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Brochure 2026–27 PDF</a>.
+              For any queries, please <a href="/contact" style="color: inherit; text-decoration: underline;">contact
+                CoSA</a>.</small>
+          </div>
+        </div>
+
+        <form class="chat-input-area" id="chat-form">
+          <input type="text" id="chat-input" class="chat-input"
+            placeholder="Ask about clubs, fests, sports, or student life..." autocomplete="off" required>
+          <button type="submit" id="chat-send" class="chat-send-btn" title="Send message">&rarr;</button>
+        </form>
+      </div>
+
+      <p class="chat-disclaimer">
+        ℹ️ All sources are referred directly from the official <a
+          href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank" rel="noopener noreferrer">IIT
+          Bhilai Brochure 2026–27</a>. Please <a href="/contact">contact CoSA</a> for any queries.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="/">
+            <img src="/assets/logos/cosa-crest.svg" alt="" width="40" height="40" loading="lazy">
+            <span><strong>Cluvora</strong><small>Student life · IIT Bhilai</small></span>
+          </a>
+          <p class="footer-note">A student-community discovery experience for the Council of Student Affairs, IIT
+            Bhilai.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/tech-clubs">Tech clubs</a>
+          <a href="/cultural-clubs">Cultural clubs</a>
+          <a href="/societies">Societies</a>
+          <a href="/announcements">Announcements</a>
+          <a href="/contact">Contact</a>
+          <a href="/chatbot">AI Assistant</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© Council of Student Affairs · Indian Institute of Technology Bhilai</span>
+        <span>Built around student life.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/data.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const messagesContainer = document.getElementById('chat-messages');
+      const chatForm = document.getElementById('chat-form');
+      const chatInput = document.getElementById('chat-input');
+      const sendBtn = document.getElementById('chat-send');
+
+      function appendMessage(sender, text, sources = []) {
+        const bubble = document.createElement('div');
+        bubble.className = `chat-bubble ${sender}`;
+
+        // Simple markdown parsing for bold and bullet points
+        let formatted = text
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\n\n/g, '<br><br>')
+          .replace(/\n/g, '<br>');
+
+        bubble.innerHTML = formatted;
+
+        if (sources && sources.length > 0) {
+          const sourcesDiv = document.createElement('div');
+          sourcesDiv.className = 'sources-container';
+          sourcesDiv.innerHTML = '<span style="color: var(--text-muted); font-weight:600;">Sources:</span> ' +
+            sources.map(s => `<span class="source-pill" title="${s.title}">📄 Page ${s.page}</span>`).join(' ');
+          bubble.appendChild(sourcesDiv);
+        }
+
+        messagesContainer.appendChild(bubble);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        return bubble;
+      }
+
+      function showTypingIndicator() {
+        const bubble = document.createElement('div');
+        bubble.className = 'chat-bubble bot typing-indicator-bubble';
+        bubble.id = 'typing-indicator';
+        bubble.innerHTML = `
+          <div class="typing-dots">
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+          </div>
+        `;
+        messagesContainer.appendChild(bubble);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      }
+
+      function removeTypingIndicator() {
+        const indicator = document.getElementById('typing-indicator');
+        if (indicator) indicator.remove();
+      }
+
+      async function handleSend(query) {
+        const userText = query.trim();
+        if (!userText) return;
+
+        appendMessage('user', userText);
+        chatInput.value = '';
+        chatInput.disabled = true;
+        sendBtn.disabled = true;
+
+        showTypingIndicator();
+
+        try {
+          const response = await fetch('/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: userText })
+          });
+
+          removeTypingIndicator();
+
+          if (!response.ok) {
+            throw new Error(`Server returned error ${response.status}`);
+          }
+
+          const data = await response.json();
+          appendMessage('bot', data.reply || 'No response returned.', data.sources || []);
+
+        } catch (err) {
+          removeTypingIndicator();
+          console.error(err);
+          appendMessage('bot', '⚠️ Sorry, there was an issue processing your question. Please ensure the Flask server is running.');
+        } finally {
+          chatInput.disabled = false;
+          sendBtn.disabled = false;
+          chatInput.focus();
+        }
+      }
+
+      chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        handleSend(chatInput.value);
+      });
+    });
+  </script>
+</body>
+
+</html>

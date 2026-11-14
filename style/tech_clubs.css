@@ -218,6 +218,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+  align-items: start;
 }
 
 .club-card,
@@ -229,11 +230,17 @@
   background: var(--surface);
   box-shadow: 0 3px 14px rgba(35, 20, 50, .025);
   transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.club-card:not(.is-expanded) {
+  cursor: pointer;
 }
 
 .club-card:hover,
 #tech-teams-list > article:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: var(--primary-soft);
   box-shadow: var(--shadow);
 }
@@ -243,7 +250,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin: 0 0 18px;
+  margin: 0 0 16px;
+  cursor: pointer;
 }
 
 .club-logo,
@@ -257,6 +265,7 @@
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface);
+  text-decoration: none;
 }
 
 [data-theme="dark"] .club-logo,
@@ -300,6 +309,61 @@
   color: var(--text);
 }
 
+.club-desc-preview {
+  margin: 0 0 16px;
+  flex-grow: 1;
+}
+
+.club-card.is-expanded .club-desc-preview {
+  display: none;
+}
+
+/* Smooth expandable details section using grid transition */
+.club-details-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows .3s cubic-bezier(0.16, 1, 0.3, 1), opacity .25s ease;
+}
+
+.club-card.is-expanded .club-details-wrapper {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.club-details-content {
+  overflow: hidden;
+}
+
+.club-card.is-expanded .club-details-content {
+  overflow: visible;
+}
+
+.club-detail-section {
+  margin: 0 0 14px;
+  font-size: .88rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.club-detail-section strong {
+  display: inline-block;
+  color: var(--text);
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.club-detail-section a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.club-detail-section a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .club-tags,
 #tech-teams-list > article ul[aria-label="Tags"] {
   list-style: none;
@@ -307,7 +371,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 0 0 16px;
+  margin: 4px 0 16px;
 }
 
 .club-tags li small,
@@ -319,6 +383,16 @@
   color: var(--text-muted);
   font-size: .68rem;
   font-weight: 700;
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.club-tag-item {
+  cursor: pointer;
+}
+
+.club-tag-item:hover {
+  background: var(--primary) !important;
+  color: #ffffff !important;
 }
 
 .club-links,
@@ -342,6 +416,49 @@
 #tech-teams-list > article > nav a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.club-expand-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: .84rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.club-expand-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.club-expand-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.club-expand-btn .expand-arrow {
+  display: inline-block;
+  font-size: .88rem;
+  transition: transform .25s ease;
+}
+
+.club-card.is-expanded .club-expand-btn {
+  margin-top: 16px;
+}
+
+.club-card.is-expanded .club-expand-btn .expand-arrow {
+  transform: rotate(180deg);
 }
 
 .loading-state,
