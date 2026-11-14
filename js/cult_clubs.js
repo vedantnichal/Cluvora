@@ -93,7 +93,7 @@ function render_cards(clubs_2_render) {
 
 function search_filter() {
   const main = document.querySelector('main');
-  const container = document.getElementById('tech-teams-list');
+  const container = document.getElementById('cult-list');
   if (!main || !container || document.getElementById('club-search-input')) return;
 
   const searchWrapper = document.createElement('div');
@@ -110,11 +110,11 @@ function search_filter() {
   searchInput.addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase().trim();
     if (!query) {
-      render_cards(tech_clubs);
+      render_cards(cult_clubs);
       return;
     }
 
-    const filtered = tech_clubs.filter(club => {
+    const filtered = cult_clubs.filter(club => {
       const matchName = (club.name || '').toLowerCase().includes(query);
       const matchDesc = (club.description || '').toLowerCase().includes(query);
       const matchTagline = (club.tagline || '').toLowerCase().includes(query);

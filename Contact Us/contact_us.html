@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5fa">
+  <meta name="description"
+    content="Contact the Council of Student Affairs (CoSA) and meet the website development team behind Cluvora at IIT Bhilai.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/cosa-crest.svg">
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/contact_us.css">
+  <title>Contact Us & Builders | Cluvora — IIT Bhilai</title>
+  <script>
+    const saved_theme = localStorage.getItem("theme");
+    const prefers_dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved_theme || (prefers_dark ? "dark" : "light"));
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../Home/index.html" aria-label="Cluvora home">
+        <img src="../assets/logos/cosa-crest.svg" alt="Council of Student Affairs logo" width="44" height="44">
+        <span><strong>Cluvora</strong><small>Student life · IIT Bhilai</small></span>
+      </a>
+      <div class="nav-area">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../Home/index.html">Home</a>
+          <a href="../Tech%20Clubs/tech_clubs.html">Tech clubs</a>
+          <a href="../Cultural%20Clubs/cult_clubs.html">Cultural clubs</a>
+          <a href="../Societies/soc.html">Societies</a>
+          <a href="../Anouncements/announcements.html">Announcements</a>
+          <a href="contact_us.html" aria-current="page">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+          aria-label="Switch to dark theme">
+          <span aria-hidden="true" id="theme-icon">◐</span><span id="theme-label">Dark mode</span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy-block">
+          <span class="eyebrow">Get in touch · IIT Bhilai</span>
+          <h1>Connect with us.<br><em>Let’s build together.</em></h1>
+          <p class="hero-copy">
+            Have questions about student life, club activities, or suggestions for the platform?
+            Reach out to the student development team behind Cluvora or contact the Council of Student Affairs directly.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#team-builders">Meet the Builders <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="#contact-form-section">Send a Message</a>
+          </div>
+        </div>
+
+        <div class="hero-art" role="region" aria-label="Contact channels overview">
+          <div class="art-top">
+            <span class="art-label">Direct Communication</span>
+            <span class="art-mark" aria-hidden="true">✉</span>
+          </div>
+          <div class="art-headline">Student voices,<br><span>always welcome.</span></div>
+          <div class="contact-highlights-grid">
+            <div class="highlight-card">
+              <span class="highlight-num">01 / TEAM</span>
+              <strong>3 Student Builders</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-num">02 / OFFICE</span>
+              <strong>CoSA</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-num">03 / COLLAB</span>
+              <strong>Club Partnerships</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-num">04 / SUPPORT</span>
+              <strong>Feedback & Bugs</strong>
+            </div>
+          </div>
+          <div class="art-foot">
+            <span>IIT Bhilai Student Council</span>
+            <span>Durg, Chhattisgarh · India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team-builders">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">The Creators</span>
+            <h2>Website Development Team</h2>
+          </div>
+          <p class="section-intro">
+            Cluvora was designed and developed by three students from IIT Bhilai.
+            Feel free to connect with any of the builders regarding platform feedback, technical suggestions, or collaboration.
+          </p>
+        </div>
+
+        <div class="builders-grid">
+          <article class="builder-card">
+            <div class="builder-header">
+              <div class="builder-avatar" aria-hidden="true">
+                <span>M1</span>
+              </div>
+              <div class="builder-meta">
+                <h3 class="builder-name">Sumiran Akre</h3>
+                <span class="builder-role">Lead Backend Designer</span>
+              </div>
+            </div>
+
+            <div class="builder-dept">
+              <span class="dept-badge">B.Tech · CSE</span>
+              <span class="batch-text">IIT Bhilai</span>
+            </div>
+
+            <p class="builder-bio">
+              Led backend design and architecture, crafted the interactive chat bot and proper workflow of ideas and thoughts.
+            </p>
+
+            <div class="builder-links">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sumiranvitthal@iitbhilai.ac.in" target="_blank" rel="noopener noreferrer" class="builder-link" title="Compose email in Gmail">
+                <span class="icon" aria-hidden="true">✉</span>
+                <span>sumiranvitthal@iitbhilai.ac.in ↗</span>
+              </a>
+              <a href="https://github.com/SumiRann1" target="_blank" rel="noopener noreferrer" class="builder-link" title="GitHub profile">
+                <svg class="icon github-icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>github.com/Sumiran Akre</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="builder-card">
+            <div class="builder-header">
+              <div class="builder-avatar" aria-hidden="true">
+                <span>M2</span>
+              </div>
+              <div class="builder-meta">
+                <h3 class="builder-name">Vedant Nichal</h3>
+                <span class="builder-role">Frontend & Content Architecture</span>
+              </div>
+            </div>
+            <div class="builder-dept">
+              <span class="dept-badge">B.Tech · CSE</span>
+              <span class="batch-text">IIT Bhilai</span>
+            </div>
+
+            <p class="builder-bio">
+              Structured council datasets, developed the societies and announcement sections,
+              and streamlined student interaction workflows.
+            </p>
+
+            <div class="builder-links">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vvnichal@iitbhilai.ac.in" target="_blank" rel="noopener noreferrer" class="builder-link" title="Compose email in Gmail">
+                <span class="icon" aria-hidden="true">✉</span>
+                <span>vvnichal@iitbhilai.ac.in ↗</span>
+              </a>
+              <a href="https://github.com/vedantnichal" target="_blank" rel="noopener noreferrer" class="builder-link" title="GitHub profile">
+                <svg class="icon github-icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>github.com/Vedant Nichal</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="builder-card">
+            <div class="builder-header">
+              <div class="builder-avatar" aria-hidden="true">
+                <span>M3</span>
+              </div>
+              <div class="builder-meta">
+                <h3 class="builder-name">Naman Gupta</h3>
+                <span class="builder-role">Tech Clubs & Core Systems</span>
+              </div>
+            </div>
+            <div class="builder-dept">
+              <span class="dept-badge">B.Tech · CSE</span>
+              <span class="batch-text">IIT Bhilai</span>
+            </div>
+
+            <p class="builder-bio">
+              Implemented technical club databases, modal interactions, search filters,
+              and coordinated the integration of CoSA club registries.
+            </p>
+
+            <div class="builder-links">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=namangupta@iitbhilai.ac.in" target="_blank" rel="noopener noreferrer" class="builder-link" title="Compose email in Gmail">
+                <span class="icon" aria-hidden="true">✉</span>
+                <span>namangupta@iitbhilai.ac.in ↗</span>
+              </a>
+              <a href="https://github.com/namangupta0110k-creator" target="_blank" rel="noopener noreferrer" class="builder-link" title="GitHub profile">
+                <svg class="icon github-icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>github.com/Naman Gupta</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="contact-form-section">
+      <div class="wrap">
+        <div class="contact-split-grid">
+
+          <div class="form-container">
+            <span class="eyebrow">Send a message</span>
+            <h2>Leave us a note.</h2>
+            <p class="form-desc">
+              Have feedback on the portal, spotted a bug, or want to collaborate with a student body? Fill out the details below.
+            </p>
+
+            <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" placeholder="e.g. Anand Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-purpose">Reason for Contact <span class="required">*</span></label>
+                <select id="contact-purpose" name="purpose" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="builder_feedback">Website Feedback / Suggestion</option>
+                  <option value="bug_report">Report a Technical Bug</option>
+                  <option value="club_inquiry">Club Details & Coordination</option>
+                  <option value="cosa_general">Council of Student Affairs (General)</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Write your message or inquiry here..." required></textarea>
+              </div>
+
+              <button type="submit" class="button" id="submit-btn">
+                Send Message <span aria-hidden="true">↗</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert" style="display: none;"></div>
+            </form>
+          </div>
+
+          <div class="office-info" id="office-info">
+            <span class="eyebrow">Campus Headquarters</span>
+            <h2>Council of Student Affairs</h2>
+            <p class="office-desc">
+              The primary student governing and coordinating body at the Indian Institute of Technology Bhilai.
+            </p>
+
+            <div class="info-blocks">
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Campus Address</strong>
+                  <p>
+                    Student Activity Centre (SAC),<br>
+                    IIT Bhilai, Kutelabhata Campus,<br>
+                    Durg, Chhattisgarh — 491001, India
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">✉</span>
+                <div>
+                  <strong>Official Email</strong>
+                  <p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=CoSA@iitbhilai.ac.in" target="_blank" rel="noopener noreferrer" class="text-link" title="Compose email to CoSA in Gmail">
+                      CoSA@iitbhilai.ac.in ↗
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">🕒</span>
+                <div>
+                  <strong>Student Office Hours</strong>
+                  <p>Monday – Friday: 5:00 PM – 8:00 PM<br>(During academic semesters)</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon" aria-hidden="true">🌐</span>
+                <div>
+                  <strong>Official CoSA Portal</strong>
+                  <p>
+                    <a href="https://polaris.iitbhilai.ac.in/#home" target="_blank" rel="noopener noreferrer" class="text-link">
+                      Polaris Student Portal ↗
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-connect">
+              <span class="social-label">Follow Campus Life:</span>
+              <div class="social-tags">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Common Inquiries</span>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <p class="section-intro">Quick answers regarding clubs, website updates, and student contributions.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3>How do I report an issue or suggest a feature on Cluvora?</h3>
+            <p>You can message the 3 website builders directly using the form above or email any of the developers listed in the team section.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Can I update my club or society's information?</h3>
+            <p>Yes! Club coordinators can reach out to CoSA or mention updates in the contact form with your official club coordinator email.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Who can join student clubs at IIT Bhilai?</h3>
+            <p>All enrolled students (B.Tech, M.Tech, M.Sc, and Ph.D.) are eligible to participate and register in all tech, cultural, and sports clubs.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>How can I contribute to the Cluvora codebase?</h3>
+            <p>Cluvora is an open initiative built by students. Contact the builders via their GitHub profiles above to get involved in ongoing enhancements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../Home/index.html">
+            <img src="../assets/logos/cosa-crest.svg" alt="" width="40" height="40" loading="lazy">
+            <span><strong>Cluvora</strong><small>Student life · IIT Bhilai</small></span>
+          </a>
+          <p class="footer-note">A student-community discovery experience for the Council of Student Affairs, IIT Bhilai.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../Home/index.html">Home</a>
+          <a href="../Tech%20Clubs/tech_clubs.html">Tech clubs</a>
+          <a href="../Cultural%20Clubs/cult_clubs.html">Cultural clubs</a>
+          <a href="../Societies/soc.html">Societies</a>
+          <a href="../Anouncements/announcements.html">Announcements</a>
+          <a href="contact_us.html">Contact</a>
+          <a href="https://polaris.iitbhilai.ac.in/views/cosa.php" target="_blank" rel="noopener noreferrer">Official CoSA portal ↗</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© Council of Student Affairs · Indian Institute of Technology Bhilai</span>
+        <span>Built with care by the student development team.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js" defer></script>
+  <script>
+    function handleFormSubmit() {
+      const name = document.getElementById('contact-name').value.trim();
+      const purposeSelect = document.getElementById('contact-purpose');
+      const purposeText = purposeSelect.options[purposeSelect.selectedIndex]?.text || purposeSelect.value;
+      const message = document.getElementById('contact-message').value.trim();
+      const feedback = document.getElementById('form-feedback');
+
+      const safeName = typeof escape_html === 'function' ? escape_html(name) : name;
+      const targetEmail = "vvnichal@iitbhilai.ac.in";
+      const subject = encodeURIComponent(`[Cluvora Contact] ${purposeText} - from ${name}`);
+      const body = encodeURIComponent(
+        `Hello Team Cluvora,\n\n` +
+        `You have received a new message from the Cluvora Contact Page:\n\n` +
+        `--------------------------------------------------\n` +
+        `Sender Details:\n` +
+        `• Name: ${name}\n` +
+        `• Purpose: ${purposeText}\n` +
+        `• Sent On: ${new Date().toLocaleString()}\n` +
+        `--------------------------------------------------\n\n` +
+        `Message:\n${message}\n\n` +
+        `--------------------------------------------------\n` +
+        `Sent via Cluvora (Council of Student Affairs, IIT Bhilai)`
+      );
+
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${targetEmail}&su=${subject}&body=${body}`;
+
+      const opened = window.open(gmailUrl, '_blank');
+
+      feedback.style.display = 'block';
+      feedback.className = 'form-feedback success';
+      feedback.innerHTML = `
+        <strong>Thank you, ${safeName}!</strong> Opening Gmail to send your message to <strong>${targetEmail}</strong>.
+        <div style="margin-top: 10px;">
+          <a href="${gmailUrl}" target="_blank" rel="noopener noreferrer" class="button" style="display: inline-flex; min-height: 38px; padding: 0 16px; font-size: .84rem; text-decoration: none;">
+            Click here if Gmail did not open automatically ↗
+          </a>
+        </div>
+      `;
+
+      document.getElementById('contact-form').reset();
+    }
+  </script>
+</body>
+
+</html>
