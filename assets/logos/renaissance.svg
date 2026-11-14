@@ -6,16 +6,16 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#09090b"/>
-  <!-- Palette -->
+  
   <path d="M100 40 C50 40 40 75 40 105 C40 135 65 150 95 150 C110 150 115 140 125 140 C140 140 160 145 160 120 C160 85 150 40 100 40 Z" fill="#78350f" stroke="#b45309" stroke-width="4"/>
-  <!-- Thumb hole -->
+  
   <circle cx="135" cy="120" r="10" fill="#09090b"/>
-  <!-- Paint drops -->
+  
   <circle cx="65" cy="80" r="8" fill="#ef4444"/>
   <circle cx="90" cy="65" r="8" fill="#eab308"/>
   <circle cx="120" cy="70" r="8" fill="#3b82f6"/>
   <circle cx="75" cy="115" r="8" fill="#10b981"/>
-  <!-- Brush -->
+  
   <path d="M140 35 L165 60 L120 105 L105 95 Z" fill="#fef08a" stroke="#a16207" stroke-width="2"/>
   <path d="M105 95 L95 110 C90 115 95 125 105 120 L120 105 Z" fill="#ec4899"/>
   <text x="100" y="175" font-family="Arial, sans-serif" font-weight="bold" font-size="12" text-anchor="middle" fill="#f4f4f5" letter-spacing="2">RENAISSANCE</text>

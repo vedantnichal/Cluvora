@@ -1,5 +1,3 @@
-/* Cult Clubs page styles. Shared design tokens and navigation components come from global.css. */
-
 .hero {
   padding: clamp(62px, 9vw, 112px) 0 82px;
 }

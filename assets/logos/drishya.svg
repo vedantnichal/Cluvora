@@ -6,14 +6,14 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#1c1917"/>
-  <!-- Comedy mask -->
+  
   <g transform="translate(55, 45)">
     <path d="M10 20 C10 0 55 0 55 20 C55 55 45 75 32 75 C20 75 10 55 10 20 Z" fill="url(#maskGrad)"/>
     <ellipse cx="24" cy="28" rx="4" ry="6" fill="#1c1917"/>
     <ellipse cx="42" cy="28" rx="4" ry="6" fill="#1c1917"/>
     <path d="M22 50 Q33 65 44 50" fill="none" stroke="#1c1917" stroke-width="4" stroke-linecap="round"/>
   </g>
-  <!-- Tragedy mask -->
+  
   <g transform="translate(85, 65)">
     <path d="M10 20 C10 0 55 0 55 20 C55 55 45 75 32 75 C20 75 10 55 10 20 Z" fill="#b91c1c"/>
     <ellipse cx="24" cy="28" rx="4" ry="6" fill="#1c1917"/>

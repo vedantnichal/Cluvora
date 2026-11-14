@@ -6,11 +6,11 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#180b2e"/>
-  <!-- Stylized Question Mark with Lightbulb Glow -->
+  
   <circle cx="100" cy="75" r="40" fill="none" stroke="#facc15" stroke-width="2" stroke-dasharray="6 6" opacity="0.6"/>
   <path d="M80 65 C80 45 120 45 120 65 C120 82 100 88 100 108" fill="none" stroke="url(#quizGrad)" stroke-width="14" stroke-linecap="round"/>
   <circle cx="100" cy="128" r="7" fill="#facc15"/>
-  <!-- Idea rays -->
+  
   <line x1="100" y1="25" x2="100" y2="35" stroke="#facc15" stroke-width="4" stroke-linecap="round"/>
   <line x1="65" y1="35" x2="72" y2="42" stroke="#facc15" stroke-width="4" stroke-linecap="round"/>
   <line x1="135" y1="35" x2="128" y2="42" stroke="#facc15" stroke-width="4" stroke-linecap="round"/>

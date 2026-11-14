@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#1c1917"/>
-  <!-- Treble clef and Tanpura strings -->
+  
   <circle cx="75" cy="115" r="16" fill="url(#swaraGrad)"/>
   <circle cx="130" cy="100" r="16" fill="url(#swaraGrad)"/>
   <path d="M91 115 V55 C91 40 146 35 146 50 V100" fill="none" stroke="url(#swaraGrad)" stroke-width="8" stroke-linecap="round"/>

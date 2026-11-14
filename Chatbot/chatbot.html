@@ -45,56 +45,78 @@
   <main>
     <div class="chat-container-wrap">
       <div class="chat-hero">
-        <span class="chat-badge">SMP 2026–27 Student Life Guide</span>
-        <h1>Brochure AI Assistant</h1>
-        <p>Ask anything about IIT Bhilai student life, councils, clubs, societies, sports, and campus fests. All sources
-          are referred directly from the official <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf"
-            target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">IIT
-            Bhilai Brochure 2026–27</a> — so please <a href="/contact"
-            style="color: var(--primary); text-decoration: underline;">contact CoSA</a> for any queries or official
-          assistance.</p>
+        <span class="chat-badge">✨ Student Mentorship Program · Brochure AI</span>
+        <h1>Brochure <span class="gradient-text">AI Assistant</span></h1>
+        <p>Ask anything about IIT Bhilai student life, councils, clubs, societies, sports facilities, and campus fests. All answers are grounded strictly in the official <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank" rel="noopener noreferrer">IIT Bhilai Brochure 2026–27</a>.</p>
       </div>
 
       <div class="chat-card">
+        <div class="chat-header-bar">
+          <div class="chat-bot-identity">
+            <div class="bot-avatar-crest">
+              <img src="/assets/logos/cosa-crest.svg" alt="CoSA Crest" width="28" height="28">
+            </div>
+            <div class="bot-status-text">
+              <span class="bot-name">IIT Bhilai Student Life Assistant</span>
+              <span class="bot-status-indicator">
+                <span class="status-dot"></span>
+                <span>SMP Brochure 2026–27 Indexed · Online</span>
+              </span>
+            </div>
+          </div>
+          <div class="chat-header-actions">
+            <button class="clear-chat-btn" id="clear-chat-btn" type="button" title="Reset conversation">
+              <span>🔄</span> Reset
+            </button>
+            <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank" rel="noopener noreferrer" class="brochure-pdf-btn">
+              PDF ↗
+            </a>
+          </div>
+        </div>
+
         <div class="chips-wrapper" id="chips-container">
+          <span class="chips-label">💡 Suggested:</span>
           <button class="chip-btn" data-query="Tell me about Meraz fest">🎪 Meraz Fest</button>
-          <button class="chip-btn" data-query="What is the Council of Student Affairs (CoSA) and who leads it?">🏛️ CoSA
-            & Leadership</button>
-          <button class="chip-btn" data-query="Tell me about Sci-Tech Council clubs like GDG and Epsilon">💻 Tech clubs
-            & GDG</button>
-          <button class="chip-btn" data-query="Tell me about Cultural Council clubs like Drishya and BeatHackers">🎭
-            Cultural & Dance clubs</button>
-          <button class="chip-btn" data-query="What is Prayatna and Anveshan?">🏆 Prayatna & Anveshan</button>
-          <button class="chip-btn" data-query="What sports and gym facilities are available on campus?">🏀 Sports & Gym
-            facilities</button>
+          <button class="chip-btn" data-query="What is the Council of Student Affairs (CoSA) and who leads it?">🏛️ CoSA &amp; Leadership</button>
+          <button class="chip-btn" data-query="Tell me about Sci-Tech Council clubs like GDG and Epsilon">💻 Tech Clubs &amp; GDG</button>
+          <button class="chip-btn" data-query="Tell me about Cultural Council clubs like Drishya and BeatHackers">🎭 Cultural &amp; Dance Clubs</button>
+          <button class="chip-btn" data-query="What is Prayatna and Anveshan?">🏆 Prayatna &amp; Anveshan</button>
+          <button class="chip-btn" data-query="What sports and gym facilities are available on campus?">🏀 Sports &amp; Gym Facilities</button>
         </div>
 
         <div class="chat-messages" id="chat-messages">
-          <div class="chat-bubble bot">
-            Hello! I am your IIT Bhilai Student Life Assistant. I have indexed the <strong>Student Mentorship Program
-              Brochure (Student Life, Clubs &amp; CoSA)</strong>.
-            <br><br>
-            What would you like to know about councils, technical/cultural clubs, Meraz fest, or sports facilities?
-            <br><br>
-            <small style="opacity: 0.85; display: inline-block;">📌 All sources are referred directly from the official
-              <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank"
-                rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Brochure 2026–27 PDF</a>.
-              For any queries, please <a href="/contact" style="color: inherit; text-decoration: underline;">contact
-                CoSA</a>.</small>
+          <div class="message-row bot">
+            <div class="msg-avatar bot">🤖</div>
+            <div class="chat-bubble">
+              Hello! I am your <strong>IIT Bhilai Student Life Assistant</strong>. I have indexed the official <strong>Student Mentorship Program Brochure</strong> covering campus councils, clubs, fests, sports, and facilities.
+              <br><br>
+              What would you like to know about councils, technical/cultural clubs, Meraz fest, or hostel &amp; sports facilities?
+              <br><br>
+              <small style="opacity: 0.85; display: inline-block;">📌 All sources are referenced directly from the official <a href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Brochure 2026–27 PDF</a>. For official queries, please <a href="/contact" style="color: inherit; text-decoration: underline;">contact CoSA</a>.</small>
+            </div>
           </div>
         </div>
 
         <form class="chat-input-area" id="chat-form">
-          <input type="text" id="chat-input" class="chat-input"
-            placeholder="Ask about clubs, fests, sports, or student life..." autocomplete="off" required>
-          <button type="submit" id="chat-send" class="chat-send-btn" title="Send message">&rarr;</button>
+          <div class="input-box-wrapper">
+            <span class="input-icon">💬</span>
+            <input type="text" id="chat-input" class="chat-input"
+              placeholder="Ask about clubs, fests, sports facilities, or campus life..." autocomplete="off" required>
+            <button type="submit" id="chat-send" class="chat-send-btn" title="Send message" aria-label="Send message">
+              <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+          </div>
+          <div class="input-hints-bar">
+            <span>💡 Grounded strictly in the official IIT Bhilai brochure</span>
+            <span>Press <strong>Enter ↵</strong> to send</span>
+          </div>
         </form>
       </div>
 
       <p class="chat-disclaimer">
-        ℹ️ All sources are referred directly from the official <a
+        ℹ️ All sources are referenced directly from the official <a
           href="https://polaris.iitbhilai.ac.in/pdfs/Brochure_2026-27.pdf" target="_blank" rel="noopener noreferrer">IIT
-          Bhilai Brochure 2026–27</a>. Please <a href="/contact">contact CoSA</a> for any queries.
+          Bhilai Brochure 2026–27</a>. Please <a href="/contact">contact CoSA</a> for official queries.
       </p>
     </div>
   </main>
@@ -133,44 +155,100 @@
       const chatForm = document.getElementById('chat-form');
       const chatInput = document.getElementById('chat-input');
       const sendBtn = document.getElementById('chat-send');
+      const clearBtn = document.getElementById('clear-chat-btn');
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      function formatMarkdown(text) {
+        if (!text) return '';
+        let html = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+        html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+        const lines = html.split('\n');
+        let inList = false;
+        const processed = [];
+
+        for (let line of lines) {
+          const trimmed = line.trim();
+          if (trimmed.startsWith('- ') || trimmed.startsWith('• ') || (trimmed.startsWith('* ') && !trimmed.endsWith('*'))) {
+            if (!inList) {
+              processed.push('<ul>');
+              inList = true;
+            }
+            processed.push(`<li>${trimmed.substring(2)}</li>`);
+          } else {
+            if (inList) {
+              processed.push('</ul>');
+              inList = false;
+            }
+            processed.push(line);
+          }
+        }
+        if (inList) processed.push('</ul>');
+
+        return processed.join('\n')
+          .replace(/\n\n+/g, '<br><br>')
+          .replace(/\n/g, '<br>');
+      }
 
       function appendMessage(sender, text, sources = []) {
+        const row = document.createElement('div');
+        row.className = `message-row ${sender}`;
+
+        const avatar = document.createElement('div');
+        avatar.className = `msg-avatar ${sender}`;
+        avatar.textContent = sender === 'bot' ? '🤖' : '👤';
+
         const bubble = document.createElement('div');
-        bubble.className = `chat-bubble ${sender}`;
-
-        // Simple markdown parsing for bold and bullet points
-        let formatted = text
-          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/\n\n/g, '<br><br>')
-          .replace(/\n/g, '<br>');
-
-        bubble.innerHTML = formatted;
+        bubble.className = 'chat-bubble';
+        bubble.innerHTML = formatMarkdown(text);
 
         if (sources && sources.length > 0) {
           const sourcesDiv = document.createElement('div');
           sourcesDiv.className = 'sources-container';
-          sourcesDiv.innerHTML = '<span style="color: var(--text-muted); font-weight:600;">Sources:</span> ' +
-            sources.map(s => `<span class="source-pill" title="${s.title}">📄 Page ${s.page}</span>`).join(' ');
+          sourcesDiv.innerHTML = `
+            <div class="sources-heading">📄 Referenced Brochure Sections:</div>
+            <div class="sources-list">
+              ${sources.map(s => `
+                <span class="source-pill" title="${escapeHtml(s.title || 'Page ' + s.page)}">
+                  📑 Page ${s.page}${s.title ? ' · ' + escapeHtml(s.title) : ''}
+                </span>
+              `).join('')}
+            </div>
+          `;
           bubble.appendChild(sourcesDiv);
         }
 
-        messagesContainer.appendChild(bubble);
+        row.appendChild(avatar);
+        row.appendChild(bubble);
+        messagesContainer.appendChild(row);
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
-        return bubble;
+        return row;
       }
 
       function showTypingIndicator() {
-        const bubble = document.createElement('div');
-        bubble.className = 'chat-bubble bot typing-indicator-bubble';
-        bubble.id = 'typing-indicator';
-        bubble.innerHTML = `
-          <div class="typing-dots">
+        const row = document.createElement('div');
+        row.className = 'typing-row';
+        row.id = 'typing-indicator';
+        row.innerHTML = `
+          <div class="msg-avatar bot">🤖</div>
+          <div class="typing-bubble">
             <span class="typing-dot"></span>
             <span class="typing-dot"></span>
             <span class="typing-dot"></span>
+            <span class="typing-label">Searching brochure...</span>
           </div>
         `;
-        messagesContainer.appendChild(bubble);
+        messagesContainer.appendChild(row);
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
       }
 
@@ -221,6 +299,30 @@
         e.preventDefault();
         handleSend(chatInput.value);
       });
+
+      document.querySelectorAll('.chip-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const query = btn.getAttribute('data-query');
+          if (query) {
+            handleSend(query);
+          }
+        });
+      });
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          messagesContainer.innerHTML = `
+            <div class="message-row bot">
+              <div class="msg-avatar bot">🤖</div>
+              <div class="chat-bubble">
+                Conversation reset. Hello! I am your <strong>IIT Bhilai Student Life Assistant</strong>.
+                <br><br>
+                What would you like to know about councils, technical/cultural clubs, Meraz fest, or hostel &amp; sports facilities?
+              </div>
+            </div>
+          `;
+        });
+      }
     });
   </script>
 </body>

@@ -10,12 +10,12 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#022c22"/>
-  <!-- Laurel wreath -->
+  
   <path d="M50 110 C45 70 70 45 85 45 M150 110 C155 70 130 45 115 45" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
-  <!-- Victory Torch -->
+  
   <path d="M92 135 L96 90 H104 L108 135 Z" fill="#d97706"/>
   <path d="M90 90 H110 L105 100 H95 Z" fill="#fbbf24"/>
-  <!-- Flame -->
+  
   <path d="M100 40 C112 55 115 70 100 85 C85 70 88 55 100 40 Z" fill="url(#torchGrad)"/>
   <text x="100" y="165" font-family="Arial, sans-serif" font-weight="900" font-size="12" text-anchor="middle" fill="#ecfdf5" letter-spacing="2">IIT BHILAI</text>
   <text x="100" y="180" font-family="Arial, sans-serif" font-weight="bold" font-size="11" text-anchor="middle" fill="#34d399" letter-spacing="1.5">SPORTS COUNCIL</text>

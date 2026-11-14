@@ -6,7 +6,6 @@ async function render_soc_page() {
 
   try {
     const { all_clubs } = await get_CoSA_data();
-    // Student Welfare and Governance, Sports Council
 
     societies = all_clubs.filter(club => {
       const isWelfare = club.category === "Welfare & Governance" || club.parent_council === "Student Welfare and Governance";

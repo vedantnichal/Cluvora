@@ -6,12 +6,12 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#0f172a"/>
-  <!-- Open Book -->
+  
   <path d="M100 110 C80 95 55 95 40 100 V135 C55 130 80 130 100 145 C120 130 145 130 160 135 V100 C145 95 120 95 100 110 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="4"/>
-  <!-- Feather Quill -->
+  
   <path d="M100 120 L100 45 C100 45 135 55 125 80 C118 95 105 105 100 120 Z" fill="url(#goalGrad)" stroke="#60a5fa" stroke-width="2"/>
   <line x1="100" y1="45" x2="100" y2="125" stroke="#ffffff" stroke-width="2"/>
-  <!-- Speech quote sparks -->
+  
   <circle cx="60" cy="65" r="4" fill="#f59e0b"/>
   <circle cx="140" cy="65" r="4" fill="#f59e0b"/>
   <text x="100" y="172" font-family="Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" fill="#e0f2fe" letter-spacing="3">GOALS</text>

@@ -1,8 +1,3 @@
-"""Generation node using LangChain ChatOpenRouter.
-
-Pure functional implementation without classes.
-"""
-
 import os
 from typing import Dict, Any
 from dotenv import load_dotenv
@@ -10,7 +5,9 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_openrouter import ChatOpenRouter
 from .state import AgentState, SYSTEM_PROMPT
 
-load_dotenv()
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOTENV_PATH = os.path.join(BASE_DIR, '.env')
+load_dotenv(DOTENV_PATH)
 
 llm = ChatOpenRouter(
     model_name=os.environ.get("OPENROUTER_MODEL"),
@@ -19,7 +16,6 @@ llm = ChatOpenRouter(
 )
 
 def generate_node(state: AgentState) -> Dict[str, Any]:
-    """LangGraph node: formats retrieved context and generates answer using ChatOpenRouter."""
     query = state.get('question', '')
     docs = state.get('documents', [])
 

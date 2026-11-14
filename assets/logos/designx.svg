@@ -10,11 +10,11 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#0f172a"/>
-  <!-- Stylized D and X with Bezier nodes -->
+  
   <path d="M55 50 H90 C120 50 135 70 135 95 C135 120 120 140 90 140 H55 Z" fill="none" stroke="url(#dxGrad1)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M110 60 L155 130" stroke="url(#dxGrad2)" stroke-width="12" stroke-linecap="round"/>
   <path d="M155 60 L125 105" stroke="url(#dxGrad2)" stroke-width="12" stroke-linecap="round"/>
-  <!-- Pen anchor points -->
+  
   <circle cx="55" cy="50" r="5" fill="#ffffff" stroke="#8b5cf6" stroke-width="3"/>
   <circle cx="135" cy="95" r="5" fill="#ffffff" stroke="#ec4899" stroke-width="3"/>
   <circle cx="55" cy="140" r="5" fill="#ffffff" stroke="#8b5cf6" stroke-width="3"/>

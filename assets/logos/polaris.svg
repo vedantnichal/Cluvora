@@ -6,9 +6,9 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#0b0f19"/>
-  <!-- Compass Circle -->
+  
   <circle cx="100" cy="90" r="48" fill="none" stroke="#4f46e5" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
-  <!-- North Star (Polaris) -->
+  
   <path d="M100 45 L106 84 L145 90 L106 96 L100 135 L94 96 L55 90 L94 84 Z" fill="url(#polGrad)" stroke="#93c5fd" stroke-width="2"/>
   <circle cx="100" cy="90" r="4" fill="#ffffff"/>
   <text x="100" y="168" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#e0e7ff" letter-spacing="3">POLARIS</text>

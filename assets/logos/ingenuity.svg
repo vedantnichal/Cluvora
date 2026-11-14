@@ -6,10 +6,10 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#064e3b"/>
-  <!-- Coding Brackets & Lightbulb Core -->
+  
   <path d="M65 70 L45 95 L65 120" fill="none" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M135 70 L155 95 L135 120" fill="none" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Terminal cursor / prompt -->
+  
   <rect x="82" y="80" width="36" height="30" rx="4" fill="#022c22" stroke="#6ee7b7" stroke-width="3"/>
   <text x="100" y="102" font-family="monospace" font-weight="bold" font-size="20" text-anchor="middle" fill="#facc15">&gt;_</text>
   <text x="100" y="168" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#ecfdf5" letter-spacing="2">INGENUITY</text>

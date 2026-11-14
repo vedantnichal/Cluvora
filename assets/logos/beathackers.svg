@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#180b22"/>
-  <!-- Soundwaves -->
+  
   <g stroke="#a855f7" stroke-width="3" stroke-linecap="round" opacity="0.5">
     <line x1="45" y1="85" x2="45" y2="105"/>
     <line x1="55" y1="70" x2="55" y2="120"/>
@@ -15,7 +15,7 @@
     <line x1="145" y1="70" x2="145" y2="120"/>
     <line x1="155" y1="85" x2="155" y2="105"/>
   </g>
-  <!-- Dancer pose silhouette -->
+  
   <circle cx="100" cy="52" r="9" fill="#f472b6"/>
   <path d="M100 64 L100 100 L125 125 M100 100 L75 130 M100 78 L128 65 M100 78 L72 90" stroke="url(#danceGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <text x="100" y="172" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle" fill="#fdf2f8" letter-spacing="2">BEAT HACKERS</text>

@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <rect width="200" height="200" rx="40" fill="#ffffff"/>
-  <!-- NSS Circular Badge -->
+  
   <circle cx="100" cy="88" r="48" fill="#1e3a8a"/>
   <circle cx="100" cy="88" r="42" fill="#dc2626"/>
   <circle cx="100" cy="88" r="16" fill="#1e3a8a" stroke="#ffffff" stroke-width="2"/>
   <circle cx="100" cy="88" r="6" fill="#ffffff"/>
-  <!-- 8 spokes of Konark wheel -->
+  
   <g stroke="#ffffff" stroke-width="3">
     <line x1="100" y1="46" x2="100" y2="130"/>
     <line x1="58" y1="88" x2="142" y2="88"/>

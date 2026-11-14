@@ -1,8 +1,3 @@
-"""Document loader for RAG pipeline using LangChain Document abstractions.
-
-Pure functional implementation with zero classes.
-"""
-
 import os
 import json
 from typing import List
@@ -11,7 +6,6 @@ from langchain_core.documents import Document
 JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data_files', 'knowledge.json')
 
 def load_documents(path: str = JSON_PATH) -> List[Document]:
-    """Load brochure knowledge.json directly into LangChain Document objects."""
     with open(path, 'r', encoding='utf-8') as f:
         chunks = json.load(f)
     return [

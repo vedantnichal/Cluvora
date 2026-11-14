@@ -15,20 +15,16 @@
     </linearGradient>
   </defs>
 
-  <!-- Document Page Background -->
   <rect width="300" height="424" rx="8" fill="url(#bgGrad2223)"/>
   <rect width="300" height="424" rx="8" fill="url(#cardOverlay2)"/>
 
-  <!-- Left Spine Accent -->
   <rect x="0" y="0" width="10" height="424" rx="4" fill="#020617" opacity="0.35"/>
   <line x1="10" y1="0" x2="10" y2="424" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
 
-  <!-- Decorative Modern Geometry -->
   <path d="M 120 0 L 300 180 L 300 0 Z" fill="#9333ea" opacity="0.12"/>
   <path d="M 190 0 L 300 110 L 300 0 Z" fill="#c084fc" opacity="0.15"/>
   <circle cx="270" cy="50" r="70" fill="none" stroke="rgba(192,132,252,0.18)" stroke-width="1.5"/>
 
-  <!-- Top Institute Emblem -->
   <g transform="translate(32, 36)">
     <path d="M 22 2 L 40 10 L 40 28 C 40 40 22 48 22 48 C 22 48 4 40 4 28 L 4 10 Z" fill="none" stroke="url(#accentPurple)" stroke-width="2"/>
     <circle cx="22" cy="22" r="10" fill="none" stroke="#e9d5ff" stroke-width="1.5"/>
@@ -41,31 +37,25 @@
     <text x="52" y="40" font-family="'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="400" fill="#94a3b8" letter-spacing="0.8">Kutelabhata Campus, Durg</text>
   </g>
 
-  <!-- Divider Line -->
   <line x1="32" y1="100" x2="268" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
   <rect x="32" y="99" width="40" height="2" fill="url(#accentPurple)"/>
 
-  <!-- Document Category Badge -->
   <g transform="translate(32, 126)">
     <rect width="105" height="20" rx="4" fill="rgba(168,85,247,0.15)" stroke="#c084fc" stroke-width="1"/>
     <text x="52" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" fill="#e9d5ff" letter-spacing="1.5" text-anchor="middle">OFFICIAL REPORT</text>
   </g>
 
-  <!-- Big Title -->
   <text x="32" y="180" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="1">ANNUAL</text>
   <text x="32" y="210" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="1">WORK REPORT</text>
 
-  <!-- Academic Year Highlight -->
   <g transform="translate(32, 226)">
     <rect width="140" height="28" rx="5" fill="url(#accentPurple)"/>
     <text x="70" y="19" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="1" text-anchor="middle">2022 &#8212; 2023</text>
   </g>
 
-  <!-- Subtitle Description -->
   <text x="32" y="280" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="400" fill="#cbd5e1" letter-spacing="0.5">Annual Report of Student Activities, Campus Life,</text>
   <text x="32" y="294" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="400" fill="#cbd5e1" letter-spacing="0.5">Technical Achievements and Council Operations</text>
 
-  <!-- Bottom Accent & Metadata -->
   <line x1="32" y1="388" x2="268" y2="388" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
   <text x="32" y="404" font-family="'Courier New', monospace" font-size="7.5" fill="#a78bfa" letter-spacing="1">DOC: IITBH-COSA-AR-2022-23</text>
   <text x="268" y="404" font-family="'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="600" fill="#e9d5ff" text-anchor="end">iitbhilai.ac.in</text>

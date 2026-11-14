@@ -6,12 +6,12 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#0f172a"/>
-  <!-- Gear teeth background -->
+  
   <g stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.4">
     <circle cx="100" cy="95" r="55" stroke-dasharray="12 8" stroke-width="8"/>
     <circle cx="100" cy="95" r="42"/>
   </g>
-  <!-- Stylized Epsilon & Robot Circuit -->
+  
   <path d="M135 60 C110 50 75 60 75 90 C75 98 85 102 105 102 C85 102 75 106 75 114 C75 144 110 154 135 144" fill="none" stroke="url(#epGrad)" stroke-width="14" stroke-linecap="round"/>
   <line x1="65" y1="102" x2="115" y2="102" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
   <circle cx="135" cy="60" r="6" fill="#38bdf8"/>

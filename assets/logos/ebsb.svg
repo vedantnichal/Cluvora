@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <rect width="200" height="200" rx="40" fill="#fafafa"/>
-  <!-- Indian Tricolor Waves / Hands -->
+  
   <circle cx="100" cy="88" r="48" fill="none" stroke="#e5e7eb" stroke-width="4"/>
   <path d="M60 70 Q100 45 140 70" stroke="#f97316" stroke-width="12" stroke-linecap="round" fill="none"/>
   <path d="M65 88 Q100 68 135 88" stroke="#1e3a8a" stroke-width="6" stroke-linecap="round" fill="none"/>
   <path d="M60 106 Q100 85 140 106" stroke="#16a34a" stroke-width="12" stroke-linecap="round" fill="none"/>
-  <!-- Ashoka Chakra Mini -->
+  
   <circle cx="100" cy="88" r="8" fill="none" stroke="#1e3a8a" stroke-width="2"/>
   <text x="100" y="162" font-family="Arial, sans-serif" font-weight="900" font-size="14" text-anchor="middle" fill="#1e3a8a" letter-spacing="2">EBSB</text>
   <text x="100" y="178" font-family="Arial, sans-serif" font-weight="bold" font-size="9" text-anchor="middle" fill="#f97316" letter-spacing="1">EK BHARAT SHRESHTHA BHARAT</text>

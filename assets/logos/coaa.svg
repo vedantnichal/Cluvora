@@ -6,10 +6,10 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#0f172a"/>
-  <!-- Graduation cap -->
+  
   <path d="M100 60 L145 78 L100 96 L55 78 Z" fill="url(#coaaGrad)" stroke="#60a5fa" stroke-width="3"/>
   <path d="M70 90 V115 C70 125 100 132 100 132 C100 132 130 125 130 115 V90" fill="none" stroke="#60a5fa" stroke-width="4"/>
-  <!-- Tassel -->
+  
   <path d="M135 82 V108" stroke="#facc15" stroke-width="3" stroke-linecap="round"/>
   <circle cx="135" cy="112" r="3" fill="#facc15"/>
   <text x="100" y="168" font-family="Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" fill="#f8fafc" letter-spacing="3">CoAA</text>

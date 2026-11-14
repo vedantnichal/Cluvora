@@ -1,30 +1,3 @@
-/* :root {
-  --primary: #51218a;
-  --primary-soft: #8a5cc2;
-  --background: #f7f5fa;
-  --surface: #ffffff;
-  --surface-muted: #eee9f4;
-  --text: #171321;
-  --text-muted: #686171;
-  --border: #e6e0eb;
-  --accent: #d5f2ec;
-  --shadow: 0 18px 50px rgba(48, 28, 73, .08);
-  --max: 1180px;
-}
-
-[data-theme="dark"] {
-  --primary: #b58ae8;
-  --primary-soft: #c9a9ee;
-  --background: #14111b;
-  --surface: #201b2a;
-  --surface-muted: #292234;
-  --text: #f7f3fc;
-  --text-muted: #b8adca;
-  --border: #393044;
-  --accent: #263a38;
-  --shadow: 0 18px 50px rgba(0, 0, 0, .22);
-} */
-
 :root {
   --primary: #542451;
   --primary-soft: #8d477f;
@@ -205,14 +178,10 @@ button:focus-visible {
   border-color: var(--primary-soft);
 }
 
-
-/* Shared footer and accessibility utilities (original declarations preserved). */
 .site-footer {
   padding: 32px 0 24px;
   border-top: 1px solid var(--border);
 }
-
-
 
 .footer-top {
   display: flex;
@@ -221,8 +190,6 @@ button:focus-visible {
   gap: 28px;
 }
 
-
-
 .footer-note {
   max-width: 340px;
   margin-top: 14px;
@@ -230,15 +197,11 @@ button:focus-visible {
   font-size: .82rem;
 }
 
-
-
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 22px;
 }
-
-
 
 .footer-links a {
   color: var(--text-muted);
@@ -246,13 +209,9 @@ button:focus-visible {
   text-decoration: none;
 }
 
-
-
 .footer-links a:hover {
   color: var(--primary);
 }
-
-
 
 .footer-bottom {
   display: flex;
@@ -265,8 +224,6 @@ button:focus-visible {
   font-size: .72rem;
 }
 
-
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -278,8 +235,6 @@ button:focus-visible {
   white-space: nowrap;
   border: 0;
 }
-
-
 
 @media (max-width: 720px) {
 
@@ -300,7 +255,6 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
-
 .hero-copy {
   max-width: 590px;
   color: var(--text-muted);
@@ -308,14 +262,12 @@ button:focus-visible {
   line-height: 1.8;
 }
 
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
 }
-
 
 .button {
   display: inline-flex;
@@ -334,29 +286,24 @@ button:focus-visible {
   transition: transform .2s ease, background .2s ease, border-color .2s ease;
 }
 
-
 .button:hover {
   transform: translateY(-2px);
   background: #42166f;
 }
 
-
 [data-theme="dark"] .button {
   color: #21152e;
 }
 
-
 [data-theme="dark"] .button:hover {
   background: #c9a9ee;
 }
-
 
 .button.secondary {
   color: var(--text);
   background: transparent;
   border-color: var(--border);
 }
-
 
 .button.secondary:hover {
   border-color: var(--primary-soft);

@@ -6,9 +6,9 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#1e1b4b"/>
-  <!-- Hostel building roof & window -->
+  
   <path d="M60 100 L100 65 L140 100 V135 H60 Z" fill="none" stroke="url(#cohaGrad)" stroke-width="6" stroke-linejoin="round"/>
-  <!-- Dining plate & cutlery -->
+  
   <circle cx="100" cy="112" r="12" fill="#c4b5fd"/>
   <line x1="82" y1="102" x2="82" y2="122" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>
   <line x1="118" y1="102" x2="118" y2="122" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>

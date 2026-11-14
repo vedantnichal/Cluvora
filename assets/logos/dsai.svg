@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#030712"/>
-  <!-- Neural Network Nodes -->
+  
   <g stroke="url(#dsaiGrad)" stroke-width="3" opacity="0.7">
     <line x1="60" y1="70" x2="100" y2="55"/>
     <line x1="60" y1="70" x2="100" y2="95"/>
@@ -17,7 +17,7 @@
     <line x1="100" y1="95" x2="140" y2="115"/>
     <line x1="100" y1="135" x2="140" y2="115"/>
   </g>
-  <!-- Nodes -->
+  
   <circle cx="60" cy="70" r="8" fill="#38bdf8"/>
   <circle cx="60" cy="120" r="8" fill="#38bdf8"/>
   <circle cx="100" cy="55" r="8" fill="#818cf8"/>

@@ -6,20 +6,20 @@
     </linearGradient>
   </defs>
   <rect width="200" height="200" rx="40" fill="#030712"/>
-  <!-- Orbit rings & stars -->
+  
   <circle cx="100" cy="90" r="50" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
   <circle cx="55" cy="60" r="2" fill="#ffffff"/>
   <circle cx="145" cy="50" r="2" fill="#ffffff"/>
   <circle cx="150" cy="130" r="2" fill="#ffffff"/>
-  <!-- Rocket Body -->
+  
   <g transform="translate(100,90) rotate(45) translate(-100,-90)">
     <path d="M100 45 C115 65 115 105 115 115 H85 C85 105 85 65 100 45 Z" fill="#e2e8f0"/>
-    <!-- Rocket fins -->
+    
     <path d="M85 100 L70 120 H85 Z" fill="#dc2626"/>
     <path d="M115 100 L130 120 H115 Z" fill="#dc2626"/>
-    <!-- Window -->
+    
     <circle cx="100" cy="75" r="8" fill="#0284c7" stroke="#94a3b8" stroke-width="2"/>
-    <!-- Flame plume -->
+    
     <path d="M92 115 L100 135 L108 115 Z" fill="url(#sesGrad)"/>
   </g>
   <text x="100" y="168" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#f8fafc" letter-spacing="3">SES IITBH</text>

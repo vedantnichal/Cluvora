@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5fa">
+  <meta name="description"
+    content="Official student club announcements, event updates, workshops, competitions, and fests at IIT Bhilai.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/cosa-crest.svg">
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/announcements.css">
+  <title>Campus Announcements & Updates | Cluvora — IIT Bhilai</title>
+  <script>
+    const saved_theme = localStorage.getItem("theme");
+    const prefers_dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved_theme || (prefers_dark ? "dark" : "light"));
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../Home/index.html" aria-label="Cluvora home">
+        <img src="../assets/logos/cosa-crest.svg" alt="Council of Student Affairs logo" width="44" height="44">
+        <span><strong>Cluvora</strong><small>Student life · IIT Bhilai</small></span>
+      </a>
+      <div class="nav-area">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../Home/index.html">Home</a>
+          <a href="../Tech%20Clubs/tech_clubs.html">Tech clubs</a>
+          <a href="../Cultural%20Clubs/cult_clubs.html">Cultural clubs</a>
+          <a href="../Societies/soc.html">Societies</a>
+          <a href="announcements.html" aria-current="page">Announcements</a>
+          <a href="../Contact%20Us/contact_us.html">Contact</a>
+          <a href="../Chatbot/chatbot.html">AI Assistant</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+          aria-label="Switch to dark theme">
+          <span aria-hidden="true" id="theme-icon">◐</span><span id="theme-label">Dark mode</span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy-block">
+          <span class="eyebrow">Student Life & Activity Hub · IIT Bhilai</span>
+          <h1>Campus Announcements<br><em>& Live Updates</em></h1>
+          <p class="hero-copy">Find upcoming hackathons, workshops, auditions, cultural showcases, tournament fixtures, and recruitment calls posted directly by IIT Bhilai student clubs, societies, and councils.</p>
+          <div class="hero-actions">
+            <button class="button" data-open-modal type="button">
+              📢 Post Announcement <span aria-hidden="true">+</span>
+            </button>
+            <a class="button secondary" href="#announcements-section">
+              Browse Updates <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art-card">
+          <div class="art-card-header">
+            <span class="art-card-tag">● Live Campus Feed</span>
+            <span style="font-size: .82rem; color: var(--text-muted); font-weight: 600;">SQLite Database</span>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-val" id="stat-total-count">0</span>
+              <span class="stat-lbl">Active Announcements</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-val" id="stat-clubs-count">0</span>
+              <span class="stat-lbl">Posting Clubs & Bodies</span>
+            </div>
+          </div>
+
+          <div class="post-prompt-box">
+            <strong>Are you a club coordinator or society lead?</strong>
+            Share your initiatives, auditions, or deadlines with the entire student body in just a few clicks.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="announcements-section" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="controls-bar">
+          <div class="search-row">
+            <div class="search-input-wrap">
+              <span class="search-icon" aria-hidden="true">🔍</span>
+              <input type="text" id="announcements-search" class="announcements-search-input"
+                placeholder="Search announcements by title, club name, or keywords..." autocomplete="off">
+            </div>
+            <button class="post-btn-cta" data-open-modal type="button">
+              <span>+</span> Post Announcement
+            </button>
+          </div>
+
+          <div class="category-pills" role="tablist" aria-label="Announcement categories">
+            <button class="category-pill active" data-category="all" type="button">All Updates</button>
+            <button class="category-pill" data-category="Sci-Tech" type="button">💻 Sci-Tech</button>
+            <button class="category-pill" data-category="Cultural" type="button">🎭 Cultural</button>
+            <button class="category-pill" data-category="Sports" type="button">🏀 Sports</button>
+            <button class="category-pill" data-category="Fest" type="button">🎪 Fest & Events</button>
+            <button class="category-pill" data-category="General" type="button">📌 General Notices</button>
+          </div>
+        </div>
+
+        <div class="feed-header">
+          <h2>Latest Broadcasts</h2>
+          <span class="feed-count" id="feed-count-display">Loading updates...</span>
+        </div>
+
+        <div class="announcements-grid" id="announcements-feed">
+          <div class="loading-feed">
+            <p>Loading announcements from database...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="announcement-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-title">Post a Club Announcement</h3>
+          <p>Broadcast your club's upcoming events, workshops, or notifications to IIT Bhilai.</p>
+        </div>
+        <button class="modal-close-btn" data-close-modal type="button" aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="post-announcement-form" class="modal-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="club-select">Club / Body <span class="req">*</span></label>
+            <select id="club-select" class="form-control" required>
+              <option value="" disabled selected>Select your club or body</option>
+              <optgroup label="Sci-Tech Council">
+                <option value="OpenLake">OpenLake (Open Source)</option>
+                <option value="Spectre">Spectre (Cybersecurity)</option>
+                <option value="DSAI">DSAI (Data Science & AI)</option>
+                <option value="Electromos">Electromos (Electronics & IoT)</option>
+                <option value="Ingenuity">Ingenuity (Competitive Coding)</option>
+                <option value="Epsilon">Epsilon (Space & Astronomy)</option>
+                <option value="SES">SES (Robotics & Automation)</option>
+                <option value="Motorsports">Motorsports</option>
+                <option value="TPS">TPS (Theoretical Physics)</option>
+                <option value="DesignX">DesignX (UI/UX & Design)</option>
+              </optgroup>
+              <optgroup label="Cultural Council">
+                <option value="Beat Hackers">Beat Hackers (Dance)</option>
+                <option value="Swara">Swara (Music)</option>
+                <option value="Drishya">Drishya (Dramatics)</option>
+                <option value="Quizzotica">Quizzotica (Quizzing)</option>
+                <option value="Renaissance">Renaissance (Fine Arts)</option>
+                <option value="SPIC MACAY">SPIC MACAY</option>
+              </optgroup>
+              <optgroup label="Councils & General">
+                <option value="Council of Student Affairs (CoSA)">Council of Student Affairs (CoSA)</option>
+                <option value="Meraz Committee">Meraz Committee (Techno-Cultural Fest)</option>
+                <option value="Sports Council">Sports Council / Prayatna</option>
+                <option value="Media and Publication Body">Media & Publication Body</option>
+              </optgroup>
+              <option value="custom">✏️ Other / Not listed...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="announcement-category-select">Category <span class="req">*</span></label>
+            <select id="announcement-category-select" class="form-control" required>
+              <option value="Sci-Tech">Sci-Tech</option>
+              <option value="Cultural">Cultural</option>
+              <option value="Sports">Sports</option>
+              <option value="Fest">Fest & Celebrations</option>
+              <option value="General" selected>General Notice</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" id="custom-club-wrap" style="display: none;">
+          <label for="custom-club">Custom Club / Organization Name <span class="req">*</span></label>
+          <input type="text" id="custom-club" class="form-control" placeholder="e.g. Photography Club, NSS, EBSB">
+        </div>
+
+        <div class="form-group">
+          <label for="announcement-title-input">Announcement Headline <span class="req">*</span></label>
+          <input type="text" id="announcement-title-input" class="form-control"
+            placeholder="e.g. Open Source Hack Night 2026: Team Registration Live" required>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="announcement-date-input">Event Date or Deadline (Optional)</label>
+            <input type="text" id="announcement-date-input" class="form-control"
+              placeholder="e.g. Friday, Nov 21 · 6:00 PM">
+          </div>
+
+          <div class="form-group">
+            <label for="announcement-link-input">Registration / External Link (Optional)</label>
+            <input type="url" id="announcement-link-input" class="form-control"
+              placeholder="https://forms.gle/... or website">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="announcement-author-input">Posted By / Contact Coordinator (Optional)</label>
+          <input type="text" id="announcement-author-input" class="form-control"
+            placeholder="e.g. Aryan Sharma (Lead Coordinator)">
+        </div>
+
+        <div class="form-group">
+          <label for="announcement-content-input">Announcement Details <span class="req">*</span></label>
+          <textarea id="announcement-content-input" class="form-control"
+            placeholder="Provide all details about the initiative, venue, guidelines, or perks..." required></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="announcement-pinned-check">
+          <label for="announcement-pinned-check">Pin this announcement to top (High Priority)</label>
+        </div>
+
+        <div id="form-feedback" class="form-feedback"></div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-secondary" data-close-modal>Cancel</button>
+          <button type="submit" id="submit-announcement-btn" class="button">Publish Announcement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../Home/index.html">
+            <img src="../assets/logos/cosa-crest.svg" alt="" width="40" height="40" loading="lazy">
+            <span><strong>Cluvora</strong><small>Student life · IIT Bhilai</small></span>
+          </a>
+          <p class="footer-note">A student-community discovery experience for the Council of Student Affairs, IIT Bhilai.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../Tech%20Clubs/tech_clubs.html">Tech clubs</a>
+          <a href="../Cultural%20Clubs/cult_clubs.html">Cultural clubs</a>
+          <a href="../Societies/soc.html">Societies</a>
+          <a href="announcements.html">Announcements</a>
+          <a href="../Contact%20Us/contact_us.html">Contact</a>
+          <a href="../Chatbot/chatbot.html">AI Assistant</a>
+          <a href="https://polaris.iitbhilai.ac.in/views/cosa.php" target="_blank" rel="noopener noreferrer">Official CoSA portal ↗</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© Council of Student Affairs · Indian Institute of Technology Bhilai</span>
+        <span>Built around student life.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js" defer></script>
+  <script src="../js/announcements.js" defer></script>
+</body>
+
+</html>
+
