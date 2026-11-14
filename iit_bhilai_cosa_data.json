@@ -15,16 +15,20 @@
       "name": "Science and Technology Council",
       "short_name": "Sci-Tech Council",
       "head_por": "General Secretary, Science & Technology",
-      "description": "Nurtures technological innovation, software engineering, robotics, open-source development, and automotive design at IIT Bhilai.",
-      "color_theme": "#2563eb"
+      "description": "The Sci-Tech Council serves as a dynamic hub of innovation, curiosity, and technical excellence at IIT Bhilai, bringing together students passionate about science and technology. Led by the General Secretary of the Science and Technology Council, it encompasses ten active clubs and societies covering diverse domains such as coding, ethical hacking, web development, robotics, astronomy, open source, artificial intelligence, data science, and more.",
+      "color_theme": "#2563eb",
+      "general_secretary": "Aditya Girish Seokar",
+      "tenure": "2026-27"
     },
     {
       "id": "cultural",
       "name": "Cultural Council",
       "short_name": "Cultural Council",
       "head_por": "General Secretary, Cultural Affairs",
-      "description": "Fosters creative expression across performing arts, literature, dance, music, fine arts, and quizzing.",
-      "color_theme": "#ec4899"
+      "description": "At IIT Bhilai, culture is the heartbeat of campus life, providing students with a platform to express creativity, explore passions, and grow beyond academics. Led by the General Secretary of Cultural and Media Affairs, the Cultural Council fosters a vibrant ecosystem where art, performance, literature, media, and innovation thrive.",
+      "color_theme": "#ec4899",
+      "general_secretary": "Andiyappan Rohan",
+      "tenure": "2026-27"
     },
     {
       "id": "sports",
@@ -54,14 +58,14 @@
   "clubs": [
     {
       "club_id": "openlake",
-      "name": "OpenLake",
+      "name": "OpenLake: The Open Source Development Society",
       "tagline": "Building open source culture at IIT Bhilai",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2018,
       "status": "Active",
       "logo_url": "/assets/logos/openlake.svg",
-      "description": "The official open-source community and software development club of IIT Bhilai. OpenLake builds campus utility tools, hosts hackathons, guides students through Google Summer of Code (GSoC) and LFX mentorships, and maintains platforms used daily across the institute.",
+      "description": "OpenLake is IIT Bhilai's vibrant open-source community, dedicated to fostering innovation, collaboration, and continuous learning through the spirit of open-source development. By building, breaking, fixing, and improving projects, members gain hands-on experience with real-world software while contributing to impactful technologies. Whether you are an experienced developer or just starting your coding journey, OpenLake provides a welcoming environment to learn, collaborate, and grow alongside a passionate community of creators and problem-solvers. See you soon in the flow.",
       "social_links": {
         "website": "https://openlake.in",
         "github": "https://github.com/OpenLake",
@@ -70,14 +74,16 @@
       },
       "leads": [
         {
-          "name": "Lead Coordinator",
-          "por_role": "Overall Coordinator",
+          "name": "Ashish Kumar Dash",
+          "por_role": "Coordinator",
           "email": "openlake@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
       ],
       "flagship_events": [
         "CodePeak (Month-long Open Source Program)",
+        "DevLabs (Summer Workshops)",
+        "HackDay",
         "Git & Linux Bootcamps",
         "Campus Hackathons"
       ],
@@ -97,14 +103,14 @@
     },
     {
       "club_id": "the-epsilon",
-      "name": "The Epsilon",
+      "name": "The Epsilon Club - Robotics Club",
       "tagline": "Innovating the future of robotics and automation",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2017,
       "status": "Active",
       "logo_url": "/assets/logos/epsilon.svg",
-      "description": "Founded in April 2017, The Epsilon is the official robotics club of IIT Bhilai. The club conducts hands-on workshops on microcontrollers, ROS (Robot Operating System), computer vision, kinematics, autonomous rovers, and combat bots.",
+      "description": "Epsilon is IIT Bhilai's Robotics and Mechatronics Club, dedicated to fostering innovation, creativity, and technical excellence. Established in 2017 with the motto “Imagine, Invent, Inspire,” the club provides a platform for students passionate about technology to transform their ideas into real-world projects and prototypes. Through hands-on learning, technical workshops, collaborative projects, and innovation-driven activities, Epsilon helps members develop practical skills, critical thinking, and a strong engineering mindset. Whether you are an experienced builder or a curious beginner, Epsilon welcomes you to learn, create, and build the future together.",
       "social_links": {
         "website": "https://epsilon.iitbhilai.ac.in",
         "github": "https://github.com/TheEpsilonIITBh",
@@ -113,8 +119,14 @@
       },
       "leads": [
         {
-          "name": "Robotics Coordinator",
-          "por_role": "Club Head",
+          "name": "Gitika Bansal",
+          "por_role": "Coordinator",
+          "email": "epsilon@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Rudra Gajera",
+          "por_role": "Coordinator",
           "email": "epsilon@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -141,14 +153,14 @@
     },
     {
       "club_id": "electromos",
-      "name": "Electromos",
+      "name": "Electromos - Electronics Club",
       "tagline": "Bridging silicon, circuits, and intelligent hardware",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2017,
       "status": "Active",
-      "logo_url": "/assets/logos/electromos.svg",
-      "description": "Electromos is the dedicated electronics and IoT society of IIT Bhilai. The club conducts sessions on analog and digital electronics, PCB designing in KiCAD, FPGA programming, sensor interfacing, and smart home/industrial IoT implementations.",
+      "logo_url": "/assets/logos/electromos.png",
+      "description": "Electromos is IIT Bhilai's electronics club, dedicated to exploring IoT, embedded systems, circuit design, and simulation. Through workshops, hands-on projects, and collaborative learning, members gain practical experience in electronics, microcontroller programming, and IoT-based solutions. The club fosters innovation, technical skills, and creativity, providing a platform for students of all experience levels to learn, build, and shape the future of electronics technology.",
       "social_links": {
         "website": "https://electromos.netlify.app",
         "github": "https://github.com/Electromos-IITBh",
@@ -157,7 +169,7 @@
       },
       "leads": [
         {
-          "name": "Electronics Coordinator",
+          "name": "S Soma Sai Rakesh",
           "por_role": "Coordinator",
           "email": "electromos@iitbhilai.ac.in",
           "batch": "Undergraduate"
@@ -186,14 +198,14 @@
     },
     {
       "club_id": "ingenuity",
-      "name": "Ingenuity",
+      "name": "Ingenuity: Competitive Programming Club",
       "tagline": "Mastering algorithms, structures, and competitive problem solving",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2018,
       "status": "Active",
       "logo_url": "/assets/logos/ingenuity.svg",
-      "description": "Ingenuity is the competitive programming and algorithmic problem-solving club of IIT Bhilai. It prepares students for ICPC, Google Code Jam, Meta Hacker Cup, and technical interviews through curated practice sessions, editorials, and campus contests.",
+      "description": "Ingenuity is a student-led initiative dedicated to algorithms, problem-solving, and competitive programming. Through coding contests, technical workshops, and peer-driven challenges, it provides a platform for students to enhance their logical thinking, algorithmic skills, and coding proficiency. By fostering collaboration, learning, and healthy competition, Ingenuity empowers members to tackle challenging problems and grow as programmers. Gear up to explore the world of logic and innovation—we look forward to coding our way to success together.",
       "social_links": {
         "website": "https://ingenuity.iitbhilai.ac.in",
         "github": "https://github.com/ingenuity-iitbh",
@@ -202,8 +214,14 @@
       },
       "leads": [
         {
-          "name": "CP Lead",
-          "por_role": "Competitive Programming Lead",
+          "name": "Ankit Guin",
+          "por_role": "Coordinator",
+          "email": "ingenuity@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Krrish Agarwal",
+          "por_role": "Coordinator",
           "email": "ingenuity@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -217,28 +235,23 @@
         "Curated Problem Set Archive",
         "Editorial Bot for Discord/Telegram"
       ],
-      "achievements": [
-        "3 Teams Qualified for ICPC (International Collegiate Programming Contest) Regional Finals"
-      ],
       "tags": [
-        "Competitive Programming",
+        "CP",
         "Algorithms",
         "Data Structures",
-        "ICPC",
-        "C++",
-        "Problem Solving"
+        "ICPC"
       ]
     },
     {
       "club_id": "dsai-club",
-      "name": "DSAI Club",
+      "name": "DSAI Club - Data Science and Artificial Intelligence",
       "tagline": "Unlocking intelligence from data and modern machine learning",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2020,
       "status": "Active",
-      "logo_url": "/assets/logos/dsai.svg",
-      "description": "The Data Science and Artificial Intelligence Club of IIT Bhilai focuses on applied machine learning, deep neural architectures, computer vision, natural language processing, and generative AI models. Members collaborate on research papers, Kaggle competitions, and production ML pipelines.",
+      "logo_url": "/assets/logos/dsai.png",
+      "description": "The DSAI Club at IIT Bhilai explores the exciting fields of data science, artificial intelligence, and machine learning through hands-on projects, workshops, research initiatives, and peer learning. As a collaborative platform for innovation and problem-solving, the club enables students to develop practical skills, explore emerging technologies, and build intelligent, data-driven solutions. The DSAI Club warmly welcomes you to IIT Bhilai and looks forward to being a part of your journey in the world of data and AI.",
       "social_links": {
         "website": "https://dsai-iitbhilai.github.io",
         "github": "https://github.com/dsai-iitbhilai",
@@ -247,7 +260,13 @@
       },
       "leads": [
         {
-          "name": "AI Lead",
+          "name": "Vatsal Yadav",
+          "por_role": "Coordinator",
+          "email": "dsai@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Siddhesh Bansal",
           "por_role": "Coordinator",
           "email": "dsai@iitbhilai.ac.in",
           "batch": "Undergraduate"
@@ -274,14 +293,14 @@
     },
     {
       "club_id": "ses",
-      "name": "Space Exploration Society (SES)",
+      "name": "Space Exploration Society: Astronomy and Aeronautics Society (SES)",
       "tagline": "Reaching beyond the horizon into the cosmos",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2018,
       "status": "Active",
-      "logo_url": "/assets/logos/ses.svg",
-      "description": "SES is the astronomy, astrophysics, and aeromodelling club of IIT Bhilai. The society is split into two specialized wings: Observational Astronomy (telescope stargazing, astrophotography, cosmological seminars) and Aeromodelling (RC plane fabrication, drone design, and water rocketry).",
+      "logo_url": "/assets/logos/ses.png",
+      "description": "The Space Exploration Society (SES) is IIT Bhilai's premier astronomy and aeronautics society, dedicated to exploring the wonders of space and flight. Through telescope observations, astrophysics activities, aeromodelling projects, RC aircraft, drones, and drone swarms, SES provides students with exciting opportunities to learn and innovate. By organizing workshops, observation sessions, competitions, and hands-on projects, the society fosters curiosity, technical skills, and a passion for discovery, welcoming all students interested in exploring the cosmos and aerospace technologies.",
       "social_links": {
         "website": "https://ses-iitbhilai.vercel.app",
         "github": "https://github.com/ses-iitbh",
@@ -290,8 +309,14 @@
       },
       "leads": [
         {
-          "name": "Astronomy & Aero Lead",
-          "por_role": "Convener",
+          "name": "Fenil Devganiya",
+          "por_role": "Coordinator",
+          "email": "ses@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Ishaan Shukla",
+          "por_role": "Coordinator",
           "email": "ses@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -324,7 +349,7 @@
       "founded_year": 2017,
       "status": "Active",
       "logo_url": "/assets/logos/motorsports.svg",
-      "description": "IIT Bhilai Motorsports is the automotive student engineering team specializing in the end-to-end design, FEA structural analysis, chassis fabrication, transmission tuning, and testing of single-seater All-Terrain Vehicles (ATVs).",
+      "description": "IIT Bhilai Motorsports is a student-driven technical club that promotes innovation in automotive engineering through hands-on learning and competitive projects. Team Agnishul, the club's official BAJA SAEINDIA team, designs, manufactures, and tests All-Terrain Vehicles (ATVs) for national-level competitions. With over 30 dedicated members, the club provides practical experience in vehicle design, analysis, manufacturing, testing, and problem-solving while fostering teamwork and leadership. Join IIT Bhilai Motorsports to turn your passion for engineering into real-world innovation.",
       "social_links": {
         "website": "https://motorsports.iitbhilai.ac.in",
         "github": "https://github.com/motorsports-iitbh",
@@ -333,8 +358,8 @@
       },
       "leads": [
         {
-          "name": "Team Captain",
-          "por_role": "Team Captain / Technical Head",
+          "name": "Tanishq",
+          "por_role": "Coordinator",
           "email": "motorsports@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -359,15 +384,55 @@
       ]
     },
     {
+      "club_id": "bib",
+      "name": "BIB: Blockchain Society of IIT Bhilai",
+      "tagline": "Exploring decentralized technologies, Web3, and blockchain solutions",
+      "category": "Science & Technology",
+      "parent_council": "Sci-Tech Council",
+      "founded_year": 2022,
+      "status": "Active",
+      "logo_url": "/assets/logos/bib.svg",
+      "description": "Blockchain Innovation Base (BIB) is IIT Bhilai’s student community for blockchain and Web3 enthusiasts, dedicated to exploring decentralized technologies through projects, workshops, research, and collaborative learning. Members gain hands-on experience in areas such as smart contracts, decentralized finance (DeFi), NFTs, and emerging Web3 innovations while developing practical solutions to real-world challenges. Whether you are a beginner or an experienced developer, BIB offers a platform to learn, innovate, and grow within a vibrant blockchain community.",
+      "social_links": {
+        "website": "",
+        "github": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      "leads": [
+        {
+          "name": "Vijay Shankar Tiwari",
+          "por_role": "Coordinator",
+          "email": "bib@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        }
+      ],
+      "flagship_events": [
+        "Web3 & Blockchain Workshops",
+        "Smart Contract Security Audits",
+        "Decentralized App (dApp) Hackathons"
+      ],
+      "key_projects": [
+        "Decentralized Campus Voting & Verification Proof-of-Concept"
+      ],
+      "tags": [
+        "Blockchain",
+        "Web3",
+        "Smart Contracts",
+        "DeFi",
+        "Crypto"
+      ]
+    },
+    {
       "club_id": "designx",
       "name": "DesignX",
       "tagline": "Crafting visual identities and seamless digital experiences",
-      "category": "Science & Technology",
-      "parent_council": "Sci-Tech Council",
+      "category": "Cultural",
+      "parent_council": "Cultural Council",
       "founded_year": 2021,
       "status": "Active",
       "logo_url": "/assets/logos/designx.svg",
-      "description": "DesignX is the digital design, branding, and UI/UX design club of IIT Bhilai. The club mentors students in Figma, Adobe Creative Cloud, Blender 3D rendering, typography, motion graphics, and visual design systems for apps and web applications.",
+      "description": "At the heart of the Cultural Council's creative vision, DesignX serves as the go-to hub for students passionate about graphic design, UI/UX, and the art of visual communication. From building brand identities and crafting eye-catching posters to designing seamless website interfaces and immersive interactive experiences, the club empowers members to push the boundaries of their digital creativity. Members sharpen their skills through hands-on workshops, take on real-world collaborative projects, and put their talent to the test in competitions, all while working with the same industry-standard tools used by professionals.",
       "social_links": {
         "website": "https://designx.iitbhilai.ac.in",
         "github": "https://github.com/designx-iitbh",
@@ -376,8 +441,8 @@
       },
       "leads": [
         {
-          "name": "Design Head",
-          "por_role": "Design Lead",
+          "name": "Parinitha Pulipati",
+          "por_role": "Coordinator",
           "email": "designx@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -402,14 +467,14 @@
     },
     {
       "club_id": "gdg-iitbhilai",
-      "name": "GDG on Campus IIT Bhilai",
+      "name": "Developers Student Club (GDG)",
       "tagline": "Connecting developers to Google developer technologies",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2019,
       "status": "Active",
       "logo_url": "/assets/logos/gdg.svg",
-      "description": "Google Developer Groups on Campus (formerly Developer Student Clubs) helps university students learn Google developer ecosystems including Flutter, Android, Google Cloud Platform, TensorFlow, and Firebase through peer-to-peer workshops.",
+      "description": "The Developers Student Club (DSC) is a vibrant community that empowers students to grow as developers through peer-to-peer learning and hands-on experiences. Focused on areas such as app and web development, cloud computing, open-source contributions, and real-world projects, DSC helps bridge the gap between academic learning and industry-relevant technologies. Through workshops, hackathons, coding sessions, and tech talks, the club fosters innovation, collaboration, and continuous learning. Whether you are a beginner or an experienced programmer, DSC provides a platform to build, learn, and grow together.",
       "social_links": {
         "website": "https://gdg.community.dev/iit-bhilai",
         "github": "https://github.com/gdg-iitbhilai",
@@ -418,8 +483,8 @@
       },
       "leads": [
         {
-          "name": "GDG Campus Lead",
-          "por_role": "Google Developer Group Lead",
+          "name": "Swarit Dixit",
+          "por_role": "Coordinator",
           "email": "dsc@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -442,14 +507,14 @@
     },
     {
       "club_id": "spectre",
-      "name": "Spectre",
+      "name": "Spectre – The Cybersecurity Club",
       "tagline": "Learn to break systems !! — Ethical hacking, CTFs, and system defense",
       "category": "Science & Technology",
       "parent_council": "Sci-Tech Council",
       "founded_year": 2021,
       "status": "Active",
-      "logo_url": "/assets/logos/spectre.svg",
-      "description": "Spectre is the official cybersecurity and information security club of IIT Bhilai. The club fosters a vibrant community of ethical hackers, security researchers, and CTF competitors focused on binary exploitation, reverse engineering, web application security, cryptography, digital forensics, and network defenses.",
+      "logo_url": "/assets/logos/spectre.png",
+      "description": "Spectre, the Cybersecurity Club of IIT Bhilai, is a community of security enthusiasts dedicated to developing skills to tackle modern cybersecurity challenges. Through CTFs, hands-on sessions, workshops, and collaborative learning, the club fosters practical experience, problem-solving, and teamwork. Whether you are a beginner or an experienced hacker, Spectre offers a platform to learn, grow, and help secure the digital future—one byte at a time.",
       "social_links": {
         "website": "https://0xspectre.tech",
         "github": "",
@@ -458,8 +523,14 @@
       },
       "leads": [
         {
-          "name": "Cybersecurity Head",
-          "por_role": "Coordinator, Spectre",
+          "name": "Rahul Saha",
+          "por_role": "Coordinator",
+          "email": "spectre@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Arpit Mohapatra",
+          "por_role": "Coordinator",
           "email": "spectre@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -486,14 +557,14 @@
     },
     {
       "club_id": "drishya",
-      "name": "Drishya",
+      "name": "Drishya (The Dramatics Club)",
       "tagline": "Illuminating stories from the street to the grand stage",
       "category": "Cultural",
       "parent_council": "Cultural Council",
       "founded_year": 2016,
       "status": "Active",
       "logo_url": "/assets/logos/drishya.svg",
-      "description": "Drishya is the official dramatic society of IIT Bhilai. The club specializes in proscenium stage plays, high-octane Nukkad Natak (street plays) addressing contemporary social dilemmas, mono-acting, voice modulation, and stage management.",
+      "description": "Drishya, the Dramatics Club of the Cultural Council, is a dynamic platform that nurtures creativity, confidence, and artistic expression among students. The club provides opportunities to explore acting, scriptwriting, direction, production, technical work, and stage management through impactful performances and collaborative learning. From intense stage plays to socially driven nukkad nataks, Drishya encourages students to use theatre as a medium for storytelling and change. The club continuously works towards creating meaningful performances that entertain, inspire, and engage audiences across campus and beyond.",
       "social_links": {
         "website": "https://drishya.iitbhilai.ac.in",
         "github": "",
@@ -502,7 +573,7 @@
       },
       "leads": [
         {
-          "name": "Dramatics Head",
+          "name": "Nikhila Anala",
           "por_role": "Coordinator",
           "email": "drishya@iitbhilai.ac.in",
           "batch": "Undergraduate"
@@ -527,14 +598,14 @@
     },
     {
       "club_id": "beat-hackers",
-      "name": "Beat Hackers",
+      "name": "Beathackers (The Dance Club)",
       "tagline": "Setting the rhythm, dominating the dance floor",
       "category": "Cultural",
       "parent_council": "Cultural Council",
       "founded_year": 2016,
       "status": "Active",
       "logo_url": "/assets/logos/beathackers.svg",
-      "description": "Beat Hackers (Beathackers) is the official dance society of IIT Bhilai. It features diverse dancers trained in hip-hop, popping, locking, contemporary, Bollywood, and classical routines. They represent the institute at the Inter-IIT Cultural Meet dance battles.",
+      "description": "Beathackers, the official Dance Club of IIT Bhilai under the Cultural Council, is a vibrant space for rhythm, energy, creativity, and stage expression. The club brings together passionate dancers from different backgrounds and encourages them to explore various dance styles such as hip-hop, freestyle, contemporary, classical, and fusion. The club aims to build a strong dance culture on campus by conducting regular practice sessions, workshops, choreo-building activities, performances, and dance battles. Beathackers provides students a platform to learn, collaborate, improve their confidence, and showcase their talent in institute events, cultural nights, competitions, and inter-college platforms.",
       "social_links": {
         "website": "https://beathackers.iitbhilai.ac.in",
         "github": "",
@@ -543,8 +614,8 @@
       },
       "leads": [
         {
-          "name": "Dance Coordinator",
-          "por_role": "Dance Head",
+          "name": "Nagulapalli Dheeraj",
+          "por_role": "Coordinator",
           "email": "beathackers@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -568,14 +639,14 @@
     },
     {
       "club_id": "swara",
-      "name": "Swara",
+      "name": "Swara (The Music Club)",
       "tagline": "Harmony, melody, and soulful acoustic resonance",
       "category": "Cultural",
       "parent_council": "Cultural Council",
       "founded_year": 2016,
       "status": "Active",
       "logo_url": "/assets/logos/swara.svg",
-      "description": "Swara is the music society of IIT Bhilai, home to vocalists, instrumentalists, percussionists, and campus bands. They cover genres ranging from Indian classical and semi-classical to indie rock, pop, and western acoustic music.",
+      "description": "Swara is a vibrant community of singers, instrumentalists, composers, and music enthusiasts united by a shared love for music. The club provides a platform for students to explore their musical talents, refine their skills, and express themselves through diverse genres and performances. Through live concerts, jam sessions, open mics, workshops, competitions, and special musical events, Swara enriches campus life and creates memorable experiences for both performers and audiences. The club also proudly represents IIT Bhilai at cultural festivals and inter-collegiate events, showcasing its musical talent beyond the campus.",
       "social_links": {
         "website": "https://swara.iitbhilai.ac.in",
         "github": "",
@@ -584,8 +655,8 @@
       },
       "leads": [
         {
-          "name": "Music Secretary",
-          "por_role": "Music Head",
+          "name": "Ratnabh Asati",
+          "por_role": "Coordinator",
           "email": "swara@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -610,14 +681,14 @@
     },
     {
       "club_id": "renaissance",
-      "name": "Renaissance",
+      "name": "Renaissance — The Fine Arts Club",
       "tagline": "Giving life to imagination through canvas, brush, and sculpture",
       "category": "Cultural",
       "parent_council": "Cultural Council",
       "founded_year": 2017,
       "status": "Active",
       "logo_url": "/assets/logos/renaissance.svg",
-      "description": "Renaissance is the fine arts and creative craft club of IIT Bhilai. From oil and acrylic paintings, charcoal sketching, and origami to large-scale wall murals and festival theme installations, Renaissance shapes the visual soul of campus life.",
+      "description": "Where imagination meets craftsmanship. Renaissance is IIT Bhilai's creative sanctuary for artists of every kind — from painters and sketchers to calligraphers and digital artists. Through workshops, art sessions, event decorations, and representation at the Inter IIT Cultural Meet, we shape the visual soul of the campus. But more than a club, we are a close-knit, happy family where creativity and fun go hand in hand. Whether you're a seasoned artist or someone who's never picked up a brush — if you have the urge to create, Renaissance is your home.",
       "social_links": {
         "website": "https://renaissance.iitbhilai.ac.in",
         "github": "",
@@ -626,8 +697,8 @@
       },
       "leads": [
         {
-          "name": "Fine Arts Coordinator",
-          "por_role": "Fine Arts Head",
+          "name": "Jalaj",
+          "por_role": "Coordinator",
           "email": "renaissance@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -651,14 +722,14 @@
     },
     {
       "club_id": "goals",
-      "name": "GOALS",
+      "name": "General Oratory and Literary Society (GOALS)",
       "tagline": "The arena of eloquent thought, debate, and literary expression",
       "category": "Cultural",
       "parent_council": "Cultural Council",
       "founded_year": 2017,
       "status": "Active",
       "logo_url": "/assets/logos/goals.svg",
-      "description": "GOALS (General Oratory And Literary Society) is the premier literary, debating, and public speaking club of IIT Bhilai. The club conducts parliamentary debates (Asian and British Parliamentary formats), creative writing sprints, poetry slams, and Model United Nations.",
+      "description": "The General Oratory And Literary Society is not just any society, it serves as a haven for one to harbor creativity, critical thinking and wield the acme of negotiation and conflict management. From our amusing stand-ups to elaborate debates, speeches and literary discussions everything leads to one goal, fostering the culture of eloquence, knowledge and purely insane enjoyment.",
       "social_links": {
         "website": "https://goals.iitbhilai.ac.in",
         "github": "",
@@ -667,8 +738,14 @@
       },
       "leads": [
         {
-          "name": "Literary Convener",
-          "por_role": "Literary Head",
+          "name": "Vidit Dedhia",
+          "por_role": "Coordinator",
+          "email": "goals@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Pranav Gore",
+          "por_role": "Coordinator",
           "email": "goals@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -700,7 +777,7 @@
       "founded_year": 2017,
       "status": "Active",
       "logo_url": "/assets/logos/quizzotica.svg",
-      "description": "Quizzotica is the official quizzing society of IIT Bhilai. It fosters a vibrant quizzing culture covering General Trivia, MELA (Music, Entertainment, Literature, Arts), Sports, Tech, and India quizzes, while training the institute's Inter-IIT quizzing team.",
+      "description": "Fuel your curiosity with Quizzotica, the ultimate hub for quiz enthusiasts under the Cultural Council. This is where intellect meets adrenaline in high-energy battles of knowledge spanning science, history, pop culture, sports, and beyond. Join us to test your fast-thinking skills, sharpen your mental recall, and grow alongside the sharpest minds on campus.",
       "social_links": {
         "website": "https://quizzotica.iitbhilai.ac.in",
         "github": "",
@@ -709,8 +786,8 @@
       },
       "leads": [
         {
-          "name": "Quiz Master",
-          "por_role": "Quiz Club Convener",
+          "name": "Ishan Chatterjee",
+          "por_role": "Coordinator",
           "email": "quizzotica@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -782,7 +859,7 @@
       "founded_year": 2018,
       "status": "Active",
       "logo_url": "/assets/logos/fps.svg",
-      "description": "The official filmmaking, cinematography, and video production society of IIT Bhilai. FPS produces festival aftermovies (Meraz, Cultscape), short films, creative skits, drone cinematography reels, and senior farewell documentaries while training students in scriptwriting, camera direction, lighting, and video editing.",
+      "description": "The Film Production Society (FPS), a part of the Cultural Council, is a creative community of passionate storytellers, cinematographers, editors, and actors who bring ideas to life on screen. FPS provides students with hands-on exposure to various aspects of filmmaking and helps them explore and develop their interests in different creative domains. Through short films, workshops, collaborative projects, sponsorships, and campus events, the society fosters creativity, teamwork, innovation, and a vibrant film culture while encouraging students to showcase their talent and potential.",
       "social_links": {
         "website": "https://fps.iitbhilai.ac.in",
         "github": "",
@@ -791,8 +868,14 @@
       },
       "leads": [
         {
-          "name": "Cinematography Head",
-          "por_role": "Head of Filmmaking & Video Production",
+          "name": "Manjot Singh",
+          "por_role": "Coordinator",
+          "email": "fps@iitbhilai.ac.in",
+          "batch": "Undergraduate"
+        },
+        {
+          "name": "Rohit Soni",
+          "por_role": "Coordinator",
           "email": "fps@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -817,14 +900,14 @@
     },
     {
       "club_id": "tps",
-      "name": "The Pixel Snappers (TPS)",
+      "name": "The Pixel Snappers (Photography Club)",
       "tagline": "Freezing moments, framing perspectives",
       "category": "Media & Publications",
       "parent_council": "Media and Publication Body",
       "founded_year": 2017,
       "status": "Active",
       "logo_url": "/assets/logos/tps.svg",
-      "description": "The official photography club of IIT Bhilai. The Pixel Snappers capture the vibrant essence of campus life across festivals, sports tournaments, convocations, and guest visits. The club organizes photowalks, portrait sessions, astrophotography nights, and workshops in camera exposure, lens optics, and Adobe Lightroom editing.",
+      "description": "The Pixel Snappers, the Photography Club of the Cultural Council, is a visual storytelling hub where students capture moments that define campus life. It brings together photography enthusiasts who explore various genres, including portrait, landscape, street and event photography, refining their creative experimentation. The Pixel Snappers ensures that performances, competitions, and candid campus experiences are beautifully documented.",
       "social_links": {
         "website": "https://tps.iitbhilai.ac.in",
         "github": "",
@@ -833,8 +916,8 @@
       },
       "leads": [
         {
-          "name": "Photography Head",
-          "por_role": "Coordinator, The Pixel Snappers",
+          "name": "Bharath Kumar R B",
+          "por_role": "Coordinator",
           "email": "tps@iitbhilai.ac.in",
           "batch": "Undergraduate"
         }
@@ -945,7 +1028,7 @@
     {
       "club_id": "nss-iitbhilai",
       "name": "National Service Scheme (NSS)",
-      "tagline": "Not Me, But You \u2014 Serving society with empathy and purpose",
+      "tagline": "Not Me, But You — Serving society with empathy and purpose",
       "category": "Welfare & Governance",
       "parent_council": "Student Welfare and Governance",
       "founded_year": 2016,
@@ -1022,87 +1105,6 @@
         "Heritage",
         "Languages",
         "EBSB"
-      ]
-    },
-    {
-      "club_id": "coha-mess",
-      "name": "Council of Hostel Affairs (CoHA) & Mess Committee",
-      "tagline": "Ensuring world-class residential comfort and nutrition",
-      "category": "Welfare & Governance",
-      "parent_council": "Student Welfare and Governance",
-      "founded_year": 2016,
-      "status": "Active",
-      "logo_url": "/assets/logos/coha.svg",
-      "description": "CoHA and the Mess Committee are elected/nominated student bodies that coordinate with the Council of Wardens. They oversee hostel infrastructure, common rooms, hygiene, internet connectivity, and execute weekly quality checks on dining mess meals.",
-      "social_links": {
-        "website": "https://iitbhilai.ac.in/index.php?pid=hostels",
-        "github": "",
-        "instagram": "",
-        "linkedin": ""
-      },
-      "leads": [
-        {
-          "name": "Hostel General Secretary",
-          "por_role": "General Secretary, Hostel Affairs",
-          "email": "coha@iitbhilai.ac.in",
-          "batch": "Senior Undergraduate"
-        }
-      ],
-      "flagship_events": [
-        "Hostel Premier Leagues & Common Room Game Nights",
-        "Mess Feedback Forums",
-        "Hostel Maintenance Audits"
-      ],
-      "key_projects": [
-        "Automated Mess Rebate and Food Feedback Portal"
-      ],
-      "tags": [
-        "Hostel",
-        "Mess",
-        "Student Welfare",
-        "Hygiene",
-        "Facilities",
-        "Dining"
-      ]
-    },
-    {
-      "club_id": "coaa",
-      "name": "Council of Academic Affairs (CoAA)",
-      "tagline": "Advocating academic fairness, feedback, and excellence",
-      "category": "Welfare & Governance",
-      "parent_council": "Student Welfare and Governance",
-      "founded_year": 2017,
-      "status": "Active",
-      "logo_url": "/assets/logos/coaa.svg",
-      "description": "CoAA serves as the official student representation to the Institute Academic Senate. The committee aggregates student feedback regarding curricula, exam scheduling, course conflicts, and teaching assistantships, maintaining healthy faculty-student dialogue.",
-      "social_links": {
-        "website": "https://iitbhilai.ac.in/index.php?pid=academic_affairs",
-        "github": "",
-        "instagram": "",
-        "linkedin": ""
-      },
-      "leads": [
-        {
-          "name": "Academic Affairs Secretary",
-          "por_role": "General Secretary, Academic Affairs",
-          "email": "coaa@iitbhilai.ac.in",
-          "batch": "Senior Undergraduate"
-        }
-      ],
-      "flagship_events": [
-        "Curriculum Feedback Open Houses",
-        "Exam Schedule Harmonization Meetings",
-        "Undergraduate Research Opportunities Fair"
-      ],
-      "key_projects": [
-        "Student Academic Grievance System"
-      ],
-      "tags": [
-        "Academics",
-        "Senate",
-        "Curriculum",
-        "Student Rights",
-        "Course Feedback"
       ]
     },
     {
