@@ -270,7 +270,8 @@ sequenceDiagram
 ```text
 Cluvora/
 ├── auth.py                     # Coordinator passcode verification blueprint & endpoints
-├── main.py                     # Main application entry point, routes & announcements API
+├── database.py                 # SQLite database connection, models & announcements helpers
+├── main.py                     # Main application entry point, web routes & API controllers
 ├── announcements.db            # SQLite database (announcements & coordinator credentials)
 ├── requirements.txt            # Python dependencies (Flask, LangGraph, FastEmbed, etc.)
 ├── .env.example                # Sample environment variables template

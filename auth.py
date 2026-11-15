@@ -1,16 +1,9 @@
 import os
 import re
-import sqlite3
 from flask import Blueprint, request, jsonify
+from database import get_db
 
 coordinator_auth = Blueprint('coordinator_auth', __name__)
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-DB_PATH = os.path.join(BASE_DIR, 'announcements.db')
-
-def get_db():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    return conn
 
 def clean_text(text):
     return re.sub(r'[^a-z0-9]', '', (text or '').lower())
@@ -38,8 +31,8 @@ def init_auth_db():
             ("motorsports", "Motorsports", "motorsports@2026", "Sci-Tech"),
             ("bib", "BIB", "bib@2026", "Sci-Tech"),
             ("gdg", "GDG", "gdg@2026", "Sci-Tech"),
-            ("tps", "TPS", "tps@2026", "Sci-Tech"),
-            ("designx", "DesignX", "designx@2026", "Sci-Tech"),
+            ("tps", "TPS", "tps@2026", "Cultural"),
+            ("designx", "DesignX", "designx@2026", "Cultural"),
             ("beathackers", "Beat Hackers", "beathackers@2026", "Cultural"),
             ("swara", "Swara", "swara@2026", "Cultural"),
             ("drishya", "Drishya", "drishya@2026", "Cultural"),
@@ -84,7 +77,7 @@ def verify_passcode(club_name, passcode):
     clean_club = clean_text(club_name)
     entered_passcode = passcode.strip()
 
-    if entered_passcode in ('cosa@admin2026', 'admin@2026', 'iitbhilai@2026'):
+    if entered_passcode in ('admin@2026'):
         return True
 
     with get_db() as conn:
