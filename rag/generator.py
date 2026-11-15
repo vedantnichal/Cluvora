@@ -34,6 +34,6 @@ def generate_node(state: AgentState) -> Dict[str, Any]:
         response = llm.invoke(messages)
         answer = response.content
     except Exception as e:
-        answer = f"Sorry, I encountered an issue connecting to the AI assistant ({e}). Please try again."
+        answer = f"Sorry, I ran into an issue retrieving the handbook guidance ({e}). Please try again in a moment."
 
     return {"answer": answer, "sources": sources}

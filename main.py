@@ -120,7 +120,7 @@ def create_announcement_api():
 def delete_announcement_api(announcement_id):
     if not delete_announcement(announcement_id):
         return jsonify({"success": False, "error": "Announcement not found."}), 404
-    return jsonify({"success": True, "message": "Announcement deleted successfully."}))
+    return jsonify({"success": True, "message": "Announcement deleted successfully."})
 
 @app.route('/contact')
 def contact_page():
