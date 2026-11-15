@@ -26,7 +26,6 @@
   - [Core Subsystem Architecture](#core-subsystem-architecture)
 - [RAG Bot Architecture & Pipeline](#-rag-bot-architecture--pipeline)
   - [LangGraph StateGraph Workflow](#langgraph-stategraph-workflow)
-  - [Lifecycle Sequence Diagram](#lifecycle-sequence-diagram)
   - [Subsystem Component Breakdown](#subsystem-component-breakdown)
 - [Tech Stack](#-tech-stack)
 - [Project Directory Structure](#-project-directory-structure)
@@ -182,41 +181,6 @@ The conversational engine uses a compiled **LangGraph `StateGraph`** with explic
                ┌───────────────────────┐
                │          END          │
                └───────────────────────┘
-```
-
-### Lifecycle Sequence Diagram
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Student as Student (Web Browser)
-    participant ChatJS as chatbot.js (Frontend)
-    participant Flask as Flask Server (/chat)
-    participant Graph as LangGraph Orchestrator
-    participant Retriever as FastEmbed MMR Retriever
-    participant LLM as ChatOpenRouter (LLM)
-
-    Student->>ChatJS: Types question & clicks Send / Chip query
-    ChatJS->>ChatJS: Render user message & show typing bubble
-    ChatJS->>Flask: POST /chat {"message": "What are the hostel rules?"}
-    Flask->>Graph: run_rag(question, top_k=3)
-    Note over Graph: Initialize AgentState(question, top_k, docs=[], answer="")
-    
-    Graph->>Retriever: retrieve_node(state)
-    Retriever->>Retriever: Query vectorstore with MMR (k=4, fetch_k=20)
-    Retriever-->>Graph: Return top relevant Document chunks + metadata
-    Note over Graph: Mutates state: state["documents"] = docs
-    
-    Graph->>LLM: generate_node(state)
-    Note over LLM: Formats Context: [Title - Page X]: ...
-    Note over LLM: Injects SMP Senior Mentor System Prompt
-    LLM-->>Graph: Grounded answer with [Page X] citations
-    Note over Graph: Mutates state: state["answer"] & state["sources"]
-    
-    Graph-->>Flask: {"answer": ..., "sources": [{"page": 45, "title": "..."}]}
-    Flask-->>ChatJS: HTTP 200 JSON Response
-    ChatJS->>ChatJS: Hide typing bubble & render Markdown bubble
-    ChatJS->>Student: Display answer with interactive brochure page pills
 ```
 
 ### Subsystem Component Breakdown
